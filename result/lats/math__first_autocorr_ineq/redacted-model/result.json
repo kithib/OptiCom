@@ -1,0 +1,79 @@
+{
+  "task_slug": "math__first_autocorr_ineq",
+  "task_full_name": "math/first_autocorr_ineq",
+  "baseline": "lats",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "first_autocorr_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-29T08:29:23",
+  "elapsed_sec": 6998.72,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9959626187912853,
+  "previous_runtime_score": 0.9925663587283431,
+  "delta_vs_previous": 0.003396260062942247,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9959626187912853,
+  "all_metrics": {
+    "runtime_score": 0.9959626187912853,
+    "score": 0.9959626187912853,
+    "c1": 1.511396050453186,
+    "combined_score": 0.9959626187912853,
+    "loss": 1.511396050453186,
+    "n_points": 2200.0,
+    "eval_time": 77.79885268211365,
+    "execution_time_ms": 94331.3660621643
+  },
+  "best_artifact_id": "art_36d3b179",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9899664489330695,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9899664489330695,
+      "artifact_id": "art_3bdb043d"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.9906478867036482,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9906478867036482,
+      "artifact_id": "art_8dbfb822"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 0.9917944799922022,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9917944799922022,
+      "artifact_id": "art_8cb6ee4c"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.9939966573222346,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9939966573222346,
+      "artifact_id": "art_e9a0a00e"
+    },
+    {
+      "iter": 12,
+      "runtime_score": 0.9959626187912853,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9959626187912853,
+      "artifact_id": "art_36d3b179"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "lats",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

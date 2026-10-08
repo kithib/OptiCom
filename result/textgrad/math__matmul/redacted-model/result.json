@@ -1,0 +1,50 @@
+{
+  "task_slug": "math__matmul",
+  "task_full_name": "math/matmul",
+  "baseline": "textgrad",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "matmul",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T20:49:34",
+  "elapsed_sec": 4835.38,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.8,
+  "all_metrics": {
+    "runtime_score": 0.8,
+    "score": 0.8,
+    "combined_score": 0.8,
+    "loss": 0.0,
+    "rank": 40.0,
+    "eval_time": 46.993404388427734,
+    "execution_time_ms": 62709.813356399536
+  },
+  "best_artifact_id": "art_eeb110ca",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.8,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8,
+      "artifact_id": "art_eeb110ca"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "textgrad",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

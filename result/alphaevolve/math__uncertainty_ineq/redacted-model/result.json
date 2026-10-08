@@ -1,0 +1,71 @@
+{
+  "task_slug": "math__uncertainty_ineq",
+  "task_full_name": "math/uncertainty_ineq",
+  "baseline": "alphaevolve",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "uncertainty_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-10T08:28:57",
+  "elapsed_sec": 11066.37,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9090030648168359,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9090030648168359,
+  "all_metrics": {
+    "runtime_score": 0.9090030648168359,
+    "score": 0.9090030648168359,
+    "c4_bound": 0.35378014200392216,
+    "combined_score": 0.9090030648168359,
+    "r_max": 1.4909279627839003,
+    "eval_time": 35.61027383804321,
+    "execution_time_ms": 65476.27592086792
+  },
+  "best_artifact_id": "art_712bf420",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.16967840418177635,
+      "abs_metric": "combined_score",
+      "abs_value": 0.16967840418177635,
+      "artifact_id": "art_52a1804a"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.8908368878796584,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8908368878796584,
+      "artifact_id": "art_ca342332"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.9067103582571613,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9067103582571613,
+      "artifact_id": "art_40a2350f"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.9090030648168359,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9090030648168359,
+      "artifact_id": "art_712bf420"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "alphaevolve",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

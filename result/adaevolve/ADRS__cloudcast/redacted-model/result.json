@@ -1,0 +1,75 @@
+{
+  "task_slug": "ADRS__cloudcast",
+  "task_full_name": "ADRS/cloudcast",
+  "baseline": "adaevolve",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "cloudcast",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-09T01:50:19",
+  "elapsed_sec": 5935.41,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.0010012837950164966,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.0010012837950164966,
+  "all_metrics": {
+    "runtime_score": 0.0010012837950164966,
+    "score": 0.0010012837950164966,
+    "combined_score": 0.0010012837950164966,
+    "runs_successfully": 1.0,
+    "total_cost": 997.7178510000001,
+    "avg_cost": 199.54357020000003,
+    "successful_configs": 5.0,
+    "failed_configs": 0.0,
+    "cost_score": 0.0010012837950164966,
+    "success_rate": 1.0,
+    "execution_time_ms": 19457.635641098022
+  },
+  "best_artifact_id": "art_e930d7fe",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.0009651245162391779,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0009651245162391779,
+      "artifact_id": "art_b0c161fd"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.0009880178344609494,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0009880178344609494,
+      "artifact_id": "art_75574bc3"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.0009925391713846877,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0009925391713846877,
+      "artifact_id": "art_f887f361"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.0010012837950164966,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0010012837950164966,
+      "artifact_id": "art_e930d7fe"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "adaevolve",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

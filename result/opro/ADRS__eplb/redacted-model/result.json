@@ -1,0 +1,73 @@
+{
+  "task_slug": "ADRS__eplb",
+  "task_full_name": "ADRS/eplb",
+  "baseline": "opro",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "eplb",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-08T22:40:21",
+  "elapsed_sec": 6402.48,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.12744175277892314,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.12744175277892314,
+  "all_metrics": {
+    "runtime_score": 0.12744175277892314,
+    "score": 0.12744175277892314,
+    "balancedness_score_gpu": 0.6633429393192228,
+    "balancedness_score_expert": 0.2505991103047041,
+    "times_algorithm": 0.012749158523299477,
+    "times_inference": 0.46681033887646417,
+    "speed_score": 0.004284395253142147,
+    "combined_score": 0.12744175277892314,
+    "execution_time_ms": 28584.56254005432
+  },
+  "best_artifact_id": "art_231993a9",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.12738896142354617,
+      "abs_metric": "combined_score",
+      "abs_value": 0.12738896142354617,
+      "artifact_id": "art_1510339e"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.12741272497661832,
+      "abs_metric": "combined_score",
+      "abs_value": 0.12741272497661832,
+      "artifact_id": "art_043f8c62"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.1274382616298504,
+      "abs_metric": "combined_score",
+      "abs_value": 0.1274382616298504,
+      "artifact_id": "art_e64060fe"
+    },
+    {
+      "iter": 18,
+      "runtime_score": 0.12744175277892314,
+      "abs_metric": "combined_score",
+      "abs_value": 0.12744175277892314,
+      "artifact_id": "art_231993a9"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opro",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

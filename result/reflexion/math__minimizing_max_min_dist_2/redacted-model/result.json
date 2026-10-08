@@ -1,0 +1,70 @@
+{
+  "task_slug": "math__minimizing_max_min_dist_2",
+  "task_full_name": "math/minimizing_max_min_dist_2",
+  "baseline": "reflexion",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "minimizing_max_min_dist_2",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T02:50:16",
+  "elapsed_sec": 5518.55,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9988619246586053,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9988619246586053,
+  "all_metrics": {
+    "runtime_score": 0.9988619246586053,
+    "score": 0.9988619246586053,
+    "min_max_ratio": 0.0774956398587083,
+    "combined_score": 0.9988619246586053,
+    "eval_time": 119.1597032546997,
+    "execution_time_ms": 126285.81881523132
+  },
+  "best_artifact_id": "art_6f323c36",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.7160703395555557,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7160703395555557,
+      "artifact_id": "art_6ca9186a"
+    },
+    {
+      "iter": 12,
+      "runtime_score": 0.8958830174170013,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8958830174170013,
+      "artifact_id": "art_b245dff2"
+    },
+    {
+      "iter": 13,
+      "runtime_score": 0.9929916716794639,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9929916716794639,
+      "artifact_id": "art_3cc7c0e8"
+    },
+    {
+      "iter": 29,
+      "runtime_score": 0.9988619246586053,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9988619246586053,
+      "artifact_id": "art_6f323c36"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "reflexion",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

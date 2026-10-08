@@ -1,0 +1,56 @@
+{
+  "task_slug": "math__hexagon_packing_12",
+  "task_full_name": "math/hexagon_packing_12",
+  "baseline": "textgrad",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "hexagon_packing_12",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T00:19:43",
+  "elapsed_sec": 1876.97,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.78838246,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.78838246,
+  "all_metrics": {
+    "runtime_score": 0.78838246,
+    "score": 0.78838246,
+    "inv_outer_hex_side_length": 0.2,
+    "combined_score": 0.78838246,
+    "eval_time": 0.00014972686767578125,
+    "execution_time_ms": 1636.4243030548096
+  },
+  "best_artifact_id": "art_63f2ea0f",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 8,
+      "runtime_score": 0.5863790079872201,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5863790079872201,
+      "artifact_id": "art_155429b9"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.78838246,
+      "abs_metric": "combined_score",
+      "abs_value": 0.78838246,
+      "artifact_id": "art_63f2ea0f"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "textgrad",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

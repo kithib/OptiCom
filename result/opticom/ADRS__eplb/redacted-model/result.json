@@ -1,0 +1,52 @@
+{
+  "task_slug": "ADRS__eplb",
+  "task_full_name": "ADRS/eplb",
+  "baseline": "opticom",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "eplb",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-21T14:19:37",
+  "elapsed_sec": 446.86,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.13437454416323683,
+  "previous_runtime_score": 0.1291363651043536,
+  "delta_vs_previous": 0.005238179058883213,
+  "abs_metric": "combined_score",
+  "abs_value": 0.13437454416323683,
+  "all_metrics": {
+    "runtime_score": 0.13437454416323683,
+    "score": 0.13437454416323683,
+    "balancedness_score_gpu": 0.6624244828344467,
+    "balancedness_score_expert": 0.25059911075530844,
+    "times_algorithm": 0.0037447425454546087,
+    "times_inference": 0.11019297363636373,
+    "speed_score": 0.018149977571165203,
+    "combined_score": 0.13437454416323683,
+    "execution_time_ms": 4188.215017318726
+  },
+  "best_artifact_id": "art_c7396389",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.13437454416323683,
+      "abs_metric": "combined_score",
+      "abs_value": 0.13437454416323683,
+      "artifact_id": "art_c7396389"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opticom",
+    "max_iterations": 2,
+    "stagnation_threshold": 4
+  }
+}

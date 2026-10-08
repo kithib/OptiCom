@@ -1,0 +1,56 @@
+{
+  "task_slug": "math__minimizing_max_min_dist_3",
+  "task_full_name": "math/minimizing_max_min_dist_3",
+  "baseline": "lats",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "minimizing_max_min_dist_3",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T01:06:08",
+  "elapsed_sec": 3171.56,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8777850351189094,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.8777850351189094,
+  "all_metrics": {
+    "runtime_score": 0.8777850351189094,
+    "score": 0.8777850351189094,
+    "min_max_ratio": 0.21070971931641178,
+    "combined_score": 0.8777850351189094,
+    "eval_time": 0.020133018493652344,
+    "execution_time_ms": 8400.107383728027
+  },
+  "best_artifact_id": "art_cb71680c",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.7957144375639376,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7957144375639376,
+      "artifact_id": "art_f695c72d"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.8777850351189094,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8777850351189094,
+      "artifact_id": "art_cb71680c"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "lats",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

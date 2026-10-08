@@ -1,0 +1,57 @@
+{
+  "task_slug": "ADRS__txn_scheduling",
+  "task_full_name": "ADRS/txn_scheduling",
+  "baseline": "self_refine",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "txn_scheduling",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-06T03:46:50",
+  "elapsed_sec": 7817.46,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 3690.036900369004,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 3690.036900369004,
+  "all_metrics": {
+    "runtime_score": 3690.036900369004,
+    "score": 3690.036900369004,
+    "makespan": 270.0,
+    "schedule": 3.0,
+    "validity": 1.0,
+    "combined_score": 3690.036900369004,
+    "execution_time_ms": 278437.38436698914
+  },
+  "best_artifact_id": "art_0627736f",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 3597.122302158273,
+      "abs_metric": "combined_score",
+      "abs_value": 3597.122302158273,
+      "artifact_id": "art_ac320a47"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 3690.036900369004,
+      "abs_metric": "combined_score",
+      "abs_value": 3690.036900369004,
+      "artifact_id": "art_0627736f"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "self_refine",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

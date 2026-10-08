@@ -1,0 +1,113 @@
+{
+  "task_slug": "ADRS__txn_scheduling",
+  "task_full_name": "ADRS/txn_scheduling",
+  "baseline": "protegi",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "txn_scheduling",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T05:01:48",
+  "elapsed_sec": 5794.2,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 3759.3984962406016,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 3759.3984962406016,
+  "all_metrics": {
+    "runtime_score": 3759.3984962406016,
+    "score": 3759.3984962406016,
+    "makespan": 265.0,
+    "schedule": 3.0,
+    "validity": 1.0,
+    "combined_score": 3759.3984962406016,
+    "execution_time_ms": 36639.779567718506
+  },
+  "best_artifact_id": "art_24b967d7",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 3355.7046979865772,
+      "abs_metric": "combined_score",
+      "abs_value": 3355.7046979865772,
+      "artifact_id": "art_cb070457"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 3389.830508474576,
+      "abs_metric": "combined_score",
+      "abs_value": 3389.830508474576,
+      "artifact_id": "art_b85241f3"
+    },
+    {
+      "iter": 4,
+      "runtime_score": 3401.3605442176868,
+      "abs_metric": "combined_score",
+      "abs_value": 3401.3605442176868,
+      "artifact_id": "art_099b20d7"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 3412.969283276451,
+      "abs_metric": "combined_score",
+      "abs_value": 3412.969283276451,
+      "artifact_id": "art_195bc472"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 3460.2076124567475,
+      "abs_metric": "combined_score",
+      "abs_value": 3460.2076124567475,
+      "artifact_id": "art_f2815702"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 3484.320557491289,
+      "abs_metric": "combined_score",
+      "abs_value": 3484.320557491289,
+      "artifact_id": "art_4f025d6a"
+    },
+    {
+      "iter": 11,
+      "runtime_score": 3521.1267605633807,
+      "abs_metric": "combined_score",
+      "abs_value": 3521.1267605633807,
+      "artifact_id": "art_8682a7f2"
+    },
+    {
+      "iter": 14,
+      "runtime_score": 3546.0992907801415,
+      "abs_metric": "combined_score",
+      "abs_value": 3546.0992907801415,
+      "artifact_id": "art_290908d1"
+    },
+    {
+      "iter": 17,
+      "runtime_score": 3703.703703703704,
+      "abs_metric": "combined_score",
+      "abs_value": 3703.703703703704,
+      "artifact_id": "art_75c9c2ef"
+    },
+    {
+      "iter": 19,
+      "runtime_score": 3759.3984962406016,
+      "abs_metric": "combined_score",
+      "abs_value": 3759.3984962406016,
+      "artifact_id": "art_24b967d7"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "protegi",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

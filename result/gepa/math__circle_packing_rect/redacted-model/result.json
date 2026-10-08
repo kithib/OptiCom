@@ -1,0 +1,56 @@
+{
+  "task_slug": "math__circle_packing_rect",
+  "task_full_name": "math/circle_packing_rect",
+  "baseline": "gepa",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "circle_packing_rect",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-23T02:09:41",
+  "elapsed_sec": 2000.67,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9895902336824641,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9895902336824641,
+  "all_metrics": {
+    "runtime_score": 0.9895902336824641,
+    "score": 0.9895902336824641,
+    "radii_sum": 2.341204373761377,
+    "combined_score": 0.9895902336824641,
+    "eval_time": 3.3906607627868652,
+    "execution_time_ms": 3393.8839435577393
+  },
+  "best_artifact_id": "art_b739a4c7",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9848434831164252,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9848434831164252,
+      "artifact_id": "art_f1cf9577"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.9895902336824641,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9895902336824641,
+      "artifact_id": "art_b739a4c7"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "gepa",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

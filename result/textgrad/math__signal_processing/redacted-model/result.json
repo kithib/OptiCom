@@ -1,0 +1,61 @@
+{
+  "task_slug": "math__signal_processing",
+  "task_full_name": "math/signal_processing",
+  "baseline": "textgrad",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "signal_processing",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T17:09:28",
+  "elapsed_sec": 2978.96,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.5011939238070733,
+  "previous_runtime_score": 0.4999878856205271,
+  "delta_vs_previous": 0.0012060381865461878,
+  "abs_metric": "combined_score",
+  "abs_value": 0.5011939238070733,
+  "all_metrics": {
+    "runtime_score": 0.5011939238070733,
+    "score": 0.5011939238070733,
+    "combined_score": 0.5011939238070733,
+    "composite_score": 0.4389295252062119,
+    "overall_score": 0.5011939238070733,
+    "slope_changes": 245.0,
+    "lag_error": 0.24359063207004233,
+    "avg_error": 0.4192968697441232,
+    "false_reversals": 190.2,
+    "correlation": 0.8834434474029654,
+    "noise_reduction": 0.3383908462135383,
+    "smoothness_score": 0.07547169811320754,
+    "responsiveness_score": 0.8041231368359788,
+    "accuracy_score": 0.8834434474029654,
+    "efficiency_score": 1.0,
+    "execution_time": 0.029543352127075196,
+    "success_rate": 1.0,
+    "execution_time_ms": 13083.863496780396
+  },
+  "best_artifact_id": "art_96384cce",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.5011939238070733,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5011939238070733,
+      "artifact_id": "art_96384cce"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "textgrad",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

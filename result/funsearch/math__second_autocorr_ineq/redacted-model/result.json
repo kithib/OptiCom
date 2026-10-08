@@ -1,0 +1,51 @@
+{
+  "task_slug": "math__second_autocorr_ineq",
+  "task_full_name": "math/second_autocorr_ineq",
+  "baseline": "funsearch",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "second_autocorr_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-28T11:08:32",
+  "elapsed_sec": 3585.58,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8347173843138617,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.8347173843138617,
+  "all_metrics": {
+    "runtime_score": 0.8347173843138617,
+    "score": 0.8347173843138617,
+    "c2": 0.7481404505983766,
+    "combined_score": 0.8347173843138617,
+    "loss": -0.7222658395767212,
+    "n_points": 128.0,
+    "eval_time": 4.614247560501099,
+    "execution_time_ms": 13762.909173965454
+  },
+  "best_artifact_id": "art_b0555959",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.8347173843138617,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8347173843138617,
+      "artifact_id": "art_b0555959"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "funsearch",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

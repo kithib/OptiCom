@@ -1,0 +1,68 @@
+{
+  "task_slug": "ADRS__prism",
+  "task_full_name": "ADRS/prism",
+  "baseline": "alphaevolve",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "prism",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T23:55:01",
+  "elapsed_sec": 1949.67,
+  "objective_key": "score",
+  "maximize": true,
+  "runtime_score": 0.9589246329036243,
+  "previous_runtime_score": 22.83068797736598,
+  "delta_vs_previous": 1.4734028778586286,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9589246329036243,
+  "all_metrics": {
+    "max_kvpr": 0.04291092092853763,
+    "execution_time": 0.00018918037414550782,
+    "success_rate": 1.0,
+    "combined_score": 0.9589246329036243,
+    "avg_case_score": 0.9589246329036243,
+    "successful_runs": 50.0,
+    "total_cases": 50.0,
+    "score": 0.9589246329036243
+  },
+  "best_artifact_id": "art_06fbaaf1",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 22.66979637930192,
+      "abs_metric": "combined_score",
+      "abs_value": 22.66979637930192,
+      "artifact_id": "art_894b68f8"
+    },
+    {
+      "iter": 4,
+      "runtime_score": 22.83068797736598,
+      "abs_metric": "combined_score",
+      "abs_value": 22.83068797736598,
+      "artifact_id": "art_7f06a205"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 24.304090855224608,
+      "abs_metric": "combined_score",
+      "abs_value": 24.304090855224608,
+      "artifact_id": "art_06fbaaf1"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "alphaevolve",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  },
+  "rescored_at": "2026-06-24T23:25:37",
+  "rescored_from_runtime_score": 24.304090855224608,
+  "rescored_program_path": "result/alphaevolve/ADRS__prism/redacted-model/best_program.py"
+}

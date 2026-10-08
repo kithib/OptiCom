@@ -1,0 +1,78 @@
+# =====================================================================
+# OptiCom · Run Config
+# ---------------------------------------------------------------------
+# 这是一个"不绑定 benchmark"的示例，等价于 minimal_test_loop.py 历史上
+# 的内联 circle packing (N=26) 任务。Agent 会把下方 runner.task_description
+# 作为 task prompt 直接喂给 Problem Formulator。
+# =====================================================================
+
+# ---- 1. 运行器设置 ---------------------------------------------------
+runner:
+  max_iterations: 10              # 主循环最大迭代轮数
+  stagnation_threshold: 3         # Controller 连续无收益多少次后触发 StrategyAdapter
+  # 当 benchmark 未启用时，直接使用这段 task_description 作为 prompt
+  task_description: |
+    You are an expert mathematician specializing in circle packing problems and
+    computational geometry. Your task is to produce a specific arrangement of
+    EXACTLY 26 circles in a unit square [0,1]x[0,1], maximizing the sum of their radii.
+    The AlphaEvolve paper achieved a sum of 2.635 for n=26.
+
+    STRICT OUTPUT CONTRACT:
+    1. Your script MUST print exactly one line in the format:
+       'Sum of Radii: <float>'
+    2. Do NOT subtract penalties from the printed value unless your configuration
+       has actual overlap or out-of-bounds circles.
+    3. Do NOT use hard `assert` statements that would crash on borderline
+       configurations — shrink radii instead.
+    4. All 26 circles MUST satisfy boundary + non-overlap constraints.
+    5. Target >= 2.635. A naive 6x5 grid only reaches ~1.08, you MUST beat the
+       incumbent shown in the prompt each iteration.
+
+    RECOMMENDED STRATEGY:
+    - Start from a structured initial layout (hexagonal / concentric rings).
+    - Parameterize all (x_i, y_i, r_i) as a flat vector of length 78.
+    - Use scipy.optimize.minimize (SLSQP / L-BFGS-B).
+    - Multiple random restarts (~10-20) and keep the best feasible solution.
+    - Total runtime < 15s, use numpy for vectorized constraints.
+
+    Output: a single self-contained runnable Python script, no markdown fences.
+  formulator_mode: algorithm_tuning   # 传给 RuleBasedFormulator.formulate()
+
+# ---- 2. Benchmark 绑定 (可选) ----------------------------------------
+# 这里关闭；若要启用请参考 example/benchmark_circle_packing.yaml
+benchmark:
+  enabled: false
+  # root: ../benchmarks   # 相对路径以本 yaml 所在目录为基准
+  # task_id: circle_packing
+
+# ---- 3. LLM 客户端 ---------------------------------------------------
+llm:
+  # provider 支持: openai / gpt / claude / anthropic / gemini / google /
+  #                 qwen / dashscope / minimax / deepseek / mock
+  provider: openai
+  model: null
+  # api_key 可以直接写在这里，或者留空以便从对应环境变量读取
+  # （例如 OPENAI_API_KEY / DEEPSEEK_API_KEY ...）
+  api_key: null
+  base_url: null
+  temperature: 0.7
+  max_tokens: 4096
+  top_p: 1.0
+  timeout: 120
+  max_retries: 2
+
+# ---- 4. 执行 Harness -------------------------------------------------
+harness:
+  python_timeout: 45              # PythonCodeHarness 超时（秒），仅在 benchmark=false 时生效
+  benchmark_timeout: 300          # BenchmarkTaskHarness 超时（秒），仅在 benchmark=true 时生效
+  python_executable: null # 留空则默认使用跑 run.py 的环境 (sys.executable)
+
+# ---- 5. Archive / Memory --------------------------------------------
+archive:
+  top_k: 3
+  # objective_metric: 留空则根据 problem.objective 自动推导为 '<obj>_score'
+  objective_metric: null
+  maximize: true
+
+memory:
+  summarize_every_n_events: 3

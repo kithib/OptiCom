@@ -1,0 +1,65 @@
+{
+  "task_slug": "math__sums_diffs_finite_sets",
+  "task_full_name": "math/sums_diffs_finite_sets",
+  "baseline": "adaevolve",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "sums_diffs_finite_sets",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T15:27:29",
+  "elapsed_sec": 30431.31,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9065846479368814,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9065846479368814,
+  "all_metrics": {
+    "runtime_score": 0.9065846479368814,
+    "score": 0.9065846479368814,
+    "c6_bound": 1.0502033233642578,
+    "combined_score": 0.9065846479368814,
+    "set_size": 90.0,
+    "max_val": 280.0,
+    "eval_time": 330.3917512893677,
+    "execution_time_ms": 347341.4738178253
+  },
+  "best_artifact_id": "art_d816b510",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.8834420902978366,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8834420902978366,
+      "artifact_id": "art_401e05b4"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.9009749795596464,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9009749795596464,
+      "artifact_id": "art_da159676"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.9065846479368814,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9065846479368814,
+      "artifact_id": "art_d816b510"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "adaevolve",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

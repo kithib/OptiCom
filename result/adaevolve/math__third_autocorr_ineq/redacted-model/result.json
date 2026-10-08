@@ -1,0 +1,79 @@
+{
+  "task_slug": "math__third_autocorr_ineq",
+  "task_full_name": "math/third_autocorr_ineq",
+  "baseline": "adaevolve",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "third_autocorr_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T23:56:11",
+  "elapsed_sec": 4098.03,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9911618625795461,
+  "previous_runtime_score": 0.9911366813023034,
+  "delta_vs_previous": 2.5181277242714017e-05,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9911618625795461,
+  "all_metrics": {
+    "runtime_score": 0.9911618625795461,
+    "score": 0.9911618625795461,
+    "c3": 1.4686226844787598,
+    "combined_score": 0.9911618625795461,
+    "loss": 1.4686226844787598,
+    "n_points": 1600.0,
+    "eval_time": 30.890352964401245,
+    "execution_time_ms": 40748.292446136475
+  },
+  "best_artifact_id": "art_2841f204",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9777961275634489,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9777961275634489,
+      "artifact_id": "art_079537ea"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.9902931646217981,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9902931646217981,
+      "artifact_id": "art_20dbc47f"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 0.9905003337479935,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9905003337479935,
+      "artifact_id": "art_4be1a001"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.9908011603543142,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9908011603543142,
+      "artifact_id": "art_262464ef"
+    },
+    {
+      "iter": 11,
+      "runtime_score": 0.9911618625795461,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9911618625795461,
+      "artifact_id": "art_2841f204"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "adaevolve",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

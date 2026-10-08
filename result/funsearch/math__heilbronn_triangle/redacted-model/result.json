@@ -1,0 +1,77 @@
+{
+  "task_slug": "math__heilbronn_triangle",
+  "task_full_name": "math/heilbronn_triangle",
+  "baseline": "funsearch",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "heilbronn_triangle",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-25T16:41:28",
+  "elapsed_sec": 2360.68,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.6508101893232952,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.6508101893232952,
+  "all_metrics": {
+    "runtime_score": 0.6508101893232952,
+    "score": 0.6508101893232952,
+    "min_area_normalized": 0.02377402454878155,
+    "combined_score": 0.6508101893232952,
+    "eval_time": 2.7282919883728027,
+    "execution_time_ms": 5055.979251861572
+  },
+  "best_artifact_id": "art_fee4df9f",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.27078262670413095,
+      "abs_metric": "combined_score",
+      "abs_value": 0.27078262670413095,
+      "artifact_id": "art_580229e0"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.6324365077688298,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6324365077688298,
+      "artifact_id": "art_b8c4bee6"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.6412172395587301,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6412172395587301,
+      "artifact_id": "art_eb04ed20"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.645332901878153,
+      "abs_metric": "combined_score",
+      "abs_value": 0.645332901878153,
+      "artifact_id": "art_2a6013eb"
+    },
+    {
+      "iter": 13,
+      "runtime_score": 0.6508101893232952,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6508101893232952,
+      "artifact_id": "art_fee4df9f"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "funsearch",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

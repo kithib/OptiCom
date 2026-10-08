@@ -1,0 +1,77 @@
+{
+  "task_slug": "math__heilbronn_convex_13",
+  "task_full_name": "math/heilbronn_convex_13",
+  "baseline": "protegi",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "heilbronn_convex_13",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-23T01:11:25",
+  "elapsed_sec": 1327.16,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.4706044914266275,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.4706044914266275,
+  "all_metrics": {
+    "runtime_score": 0.4706044914266275,
+    "score": 0.4706044914266275,
+    "min_area_normalized": 0.01455903893058908,
+    "combined_score": 0.4706044914266275,
+    "eval_time": 0.06054353713989258,
+    "execution_time_ms": 62.17646598815918
+  },
+  "best_artifact_id": "art_b64e1eb0",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.1726847724548709,
+      "abs_metric": "combined_score",
+      "abs_value": 0.1726847724548709,
+      "artifact_id": "art_b94332bf"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.32418776414991735,
+      "abs_metric": "combined_score",
+      "abs_value": 0.32418776414991735,
+      "artifact_id": "art_573e7657"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.32971772302837427,
+      "abs_metric": "combined_score",
+      "abs_value": 0.32971772302837427,
+      "artifact_id": "art_d8bcc4a4"
+    },
+    {
+      "iter": 4,
+      "runtime_score": 0.4630054095840437,
+      "abs_metric": "combined_score",
+      "abs_value": 0.4630054095840437,
+      "artifact_id": "art_fb5b80ef"
+    },
+    {
+      "iter": 19,
+      "runtime_score": 0.4706044914266275,
+      "abs_metric": "combined_score",
+      "abs_value": 0.4706044914266275,
+      "artifact_id": "art_b64e1eb0"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "protegi",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

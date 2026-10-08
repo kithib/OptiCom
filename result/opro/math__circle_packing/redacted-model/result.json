@@ -1,0 +1,51 @@
+{
+  "task_slug": "math__circle_packing",
+  "task_full_name": "math/circle_packing",
+  "baseline": "opro",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "circle_packing",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-27T03:12:26",
+  "elapsed_sec": 2117.58,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8891780817071439,
+  "previous_runtime_score": 0.855815255347622,
+  "delta_vs_previous": 0.03336282635952181,
+  "abs_metric": "sum_radii",
+  "abs_value": 2.342984245298324,
+  "all_metrics": {
+    "runtime_score": 0.8891780817071439,
+    "score": 0.8891780817071439,
+    "sum_radii": 2.342984245298324,
+    "target_ratio": 0.8891780817071439,
+    "validity": 1.0,
+    "eval_time": 1.6735808849334717,
+    "combined_score": 0.8891780817071439,
+    "execution_time_ms": 3922.363042831421
+  },
+  "best_artifact_id": "art_d56f54d4",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.8891780817071439,
+      "abs_metric": "sum_radii",
+      "abs_value": 2.342984245298324,
+      "artifact_id": "art_d56f54d4"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opro",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "task_slug": "ADRS__prism",
+  "task_full_name": "ADRS/prism",
+  "baseline": "gepa",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "prism",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T01:41:18",
+  "elapsed_sec": 2109.93,
+  "objective_key": "score",
+  "maximize": true,
+  "runtime_score": 0.9602923756940913,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9602923756940913,
+  "all_metrics": {
+    "max_kvpr": 0.041410885051925514,
+    "execution_time": 0.0001548147201538086,
+    "success_rate": 1.0,
+    "combined_score": 0.9602923756940913,
+    "avg_case_score": 0.9602923756940913,
+    "successful_runs": 50.0,
+    "total_cases": 50.0,
+    "score": 0.9602923756940913
+  },
+  "best_artifact_id": "art_bfa5a97e",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 22.66979637930192,
+      "abs_metric": "combined_score",
+      "abs_value": 22.66979637930192,
+      "artifact_id": "art_169f2f35"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 24.22256336631218,
+      "abs_metric": "combined_score",
+      "abs_value": 24.22256336631218,
+      "artifact_id": "art_813ef799"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 24.823884484776464,
+      "abs_metric": "combined_score",
+      "abs_value": 24.823884484776464,
+      "artifact_id": "art_4b7cf5f6"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 25.08931136023065,
+      "abs_metric": "combined_score",
+      "abs_value": 25.08931136023065,
+      "artifact_id": "art_e2c5dca2"
+    },
+    {
+      "iter": 11,
+      "runtime_score": 25.148240221045512,
+      "abs_metric": "combined_score",
+      "abs_value": 25.148240221045512,
+      "artifact_id": "art_bfa5a97e"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "gepa",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  },
+  "rescored_at": "2026-06-24T23:25:37",
+  "rescored_from_runtime_score": 25.148240221045512,
+  "rescored_program_path": "result/gepa/ADRS__prism/redacted-model/best_program.py"
+}

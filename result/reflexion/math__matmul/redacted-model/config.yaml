@@ -1,0 +1,42 @@
+runner:
+  max_iterations: 30
+  stagnation_threshold: 4
+  task_description: null
+  formulator_mode: algorithm_tuning
+  baseline: reflexion
+  budget:
+    max_llm_calls: 80
+    max_sandbox_runs: 400
+    max_wall_clock_mins: 180
+    max_api_cost_usd: 20.0
+benchmark:
+  enabled: true
+  root: ../benchmarks
+  task_id: matmul
+llm:
+  provider: redacted
+  model: redacted-model
+  api_key: null
+  base_url: null
+  temperature: 0.4
+  max_tokens: 8192
+  top_p: 0.95
+  timeout: 180
+  max_retries: 2
+harness:
+  python_timeout: 45
+  benchmark_timeout: 300
+  python_executable: null
+archive:
+  top_k: 5
+  objective_metric: null
+  maximize: true
+memory:
+  summarize_every_n_events: 3
+evaluation:
+  enable_robustness_gate: false
+  cost_soft_limit_ms: 600000
+context:
+  max_context_length: 8000
+  artifact_max_chars: 4000
+  evidence_max_chars: 1500

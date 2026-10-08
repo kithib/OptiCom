@@ -1,0 +1,49 @@
+{
+  "task_slug": "math__minimizing_max_min_dist_3",
+  "task_full_name": "math/minimizing_max_min_dist_3",
+  "baseline": "opro",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "minimizing_max_min_dist_3",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-25T17:56:53",
+  "elapsed_sec": 2313.35,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.7306959063296304,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.7306959063296304,
+  "all_metrics": {
+    "runtime_score": 0.7306959063296304,
+    "score": 0.7306959063296304,
+    "min_max_ratio": 0.17540140600313456,
+    "combined_score": 0.7306959063296304,
+    "eval_time": 0.07320427894592285,
+    "execution_time_ms": 8311.867475509644
+  },
+  "best_artifact_id": "art_9fe62830",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.7306959063296304,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7306959063296304,
+      "artifact_id": "art_9fe62830"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opro",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

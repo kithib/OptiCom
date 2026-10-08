@@ -1,0 +1,96 @@
+{
+  "task_slug": "math__signal_processing",
+  "task_full_name": "math/signal_processing",
+  "baseline": "self_refine",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "signal_processing",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-27T05:42:21",
+  "elapsed_sec": 2828.35,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.534282459466815,
+  "previous_runtime_score": 0.51829506321825,
+  "delta_vs_previous": 0.015987396248564933,
+  "abs_metric": "combined_score",
+  "abs_value": 0.534282459466815,
+  "all_metrics": {
+    "runtime_score": 0.534282459466815,
+    "score": 0.534282459466815,
+    "combined_score": 0.534282459466815,
+    "composite_score": 0.4466561417669144,
+    "overall_score": 0.534282459466815,
+    "slope_changes": 161.6,
+    "lag_error": 0.17279570048312407,
+    "avg_error": 0.3298529352259571,
+    "false_reversals": 127.8,
+    "correlation": 0.9292668184327665,
+    "noise_reduction": 0.4774020735543415,
+    "smoothness_score": 0.11013215859030837,
+    "responsiveness_score": 0.8526634260238658,
+    "accuracy_score": 0.9292668184327665,
+    "efficiency_score": 1.0,
+    "execution_time": 0.1413431167602539,
+    "success_rate": 1.0,
+    "execution_time_ms": 12792.365074157715
+  },
+  "best_artifact_id": "art_42e3a4f5",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.4949090791758587,
+      "abs_metric": "combined_score",
+      "abs_value": 0.4949090791758587,
+      "artifact_id": "art_dcb6685d"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.5240336025036261,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5240336025036261,
+      "artifact_id": "art_d4d67da5"
+    },
+    {
+      "iter": 14,
+      "runtime_score": 0.5248600647220679,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5248600647220679,
+      "artifact_id": "art_613a6e13"
+    },
+    {
+      "iter": 18,
+      "runtime_score": 0.5254534219063541,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5254534219063541,
+      "artifact_id": "art_9bec4b01"
+    },
+    {
+      "iter": 19,
+      "runtime_score": 0.527882840804703,
+      "abs_metric": "combined_score",
+      "abs_value": 0.527882840804703,
+      "artifact_id": "art_7a1471c6"
+    },
+    {
+      "iter": 22,
+      "runtime_score": 0.534282459466815,
+      "abs_metric": "combined_score",
+      "abs_value": 0.534282459466815,
+      "artifact_id": "art_42e3a4f5"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "self_refine",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

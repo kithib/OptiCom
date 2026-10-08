@@ -1,0 +1,91 @@
+{
+  "task_slug": "math__heilbronn_convex_14",
+  "task_full_name": "math/heilbronn_convex_14",
+  "baseline": "protegi",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "heilbronn_convex_14",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-22T21:48:28",
+  "elapsed_sec": 7566.35,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.6955671979421386,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.6955671979421386,
+  "all_metrics": {
+    "runtime_score": 0.6955671979421386,
+    "score": 0.6955671979421386,
+    "min_area_normalized": 0.019361510442494588,
+    "combined_score": 0.6955671979421386,
+    "eval_time": 30.353777408599854,
+    "execution_time_ms": 30399.86252784729
+  },
+  "best_artifact_id": "art_481913a7",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.22730682711299735,
+      "abs_metric": "combined_score",
+      "abs_value": 0.22730682711299735,
+      "artifact_id": "art_eadd9f3e"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.49048375049085513,
+      "abs_metric": "combined_score",
+      "abs_value": 0.49048375049085513,
+      "artifact_id": "art_bc6db7dc"
+    },
+    {
+      "iter": 4,
+      "runtime_score": 0.4969961059424148,
+      "abs_metric": "combined_score",
+      "abs_value": 0.4969961059424148,
+      "artifact_id": "art_e815c459"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.512945160751572,
+      "abs_metric": "combined_score",
+      "abs_value": 0.512945160751572,
+      "artifact_id": "art_9ba62535"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 0.5370292561408496,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5370292561408496,
+      "artifact_id": "art_994b7c3d"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.6924616077052216,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6924616077052216,
+      "artifact_id": "art_1f9fdb45"
+    },
+    {
+      "iter": 19,
+      "runtime_score": 0.6955671979421386,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6955671979421386,
+      "artifact_id": "art_481913a7"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "protegi",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

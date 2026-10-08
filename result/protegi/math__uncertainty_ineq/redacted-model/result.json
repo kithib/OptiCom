@@ -1,0 +1,99 @@
+{
+  "task_slug": "math__uncertainty_ineq",
+  "task_full_name": "math/uncertainty_ineq",
+  "baseline": "protegi",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "uncertainty_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-29T08:16:00",
+  "elapsed_sec": 15264.49,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9119726754641924,
+  "previous_runtime_score": 0.23559293473617696,
+  "delta_vs_previous": 0.6763797407280154,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9119726754641924,
+  "all_metrics": {
+    "runtime_score": 0.9119726754641924,
+    "score": 0.9119726754641924,
+    "c4_bound": 0.35262814556281896,
+    "combined_score": 0.9119726754641924,
+    "r_max": 1.4884985667101895,
+    "eval_time": 83.36106300354004,
+    "execution_time_ms": 102432.14440345764
+  },
+  "best_artifact_id": "art_d0c78668",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.8262502652073721,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8262502652073721,
+      "artifact_id": "art_e33e9f90"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.8384893094372758,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8384893094372758,
+      "artifact_id": "art_60c1e852"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.8418802881820241,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8418802881820241,
+      "artifact_id": "art_166b1fc5"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.8828278807668893,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8828278807668893,
+      "artifact_id": "art_0e1665d0"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.8848596079834686,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8848596079834686,
+      "artifact_id": "art_7989beb9"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 0.8966437210401714,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8966437210401714,
+      "artifact_id": "art_36814526"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.9085323327025607,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9085323327025607,
+      "artifact_id": "art_04a2ee37"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.9119726754641924,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9119726754641924,
+      "artifact_id": "art_d0c78668"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "protegi",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

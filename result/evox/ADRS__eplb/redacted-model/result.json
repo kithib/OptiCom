@@ -1,0 +1,73 @@
+{
+  "task_slug": "ADRS__eplb",
+  "task_full_name": "ADRS/eplb",
+  "baseline": "evox",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "eplb",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-09T07:30:16",
+  "elapsed_sec": 7004.91,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.1274389007576754,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.1274389007576754,
+  "all_metrics": {
+    "runtime_score": 0.1274389007576754,
+    "score": 0.1274389007576754,
+    "balancedness_score_gpu": 0.6633429393192228,
+    "balancedness_score_expert": 0.2505991103047041,
+    "times_algorithm": 0.010541444475000555,
+    "times_inference": 0.4674326567487283,
+    "speed_score": 0.004278691210646658,
+    "combined_score": 0.1274389007576754,
+    "execution_time_ms": 24080.559730529785
+  },
+  "best_artifact_id": "art_6556477e",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.12738951422866612,
+      "abs_metric": "combined_score",
+      "abs_value": 0.12738951422866612,
+      "artifact_id": "art_4c5efe06"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.12741697684219547,
+      "abs_metric": "combined_score",
+      "abs_value": 0.12741697684219547,
+      "artifact_id": "art_a99233e3"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.12743688089163888,
+      "abs_metric": "combined_score",
+      "abs_value": 0.12743688089163888,
+      "artifact_id": "art_b64bd551"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.1274389007576754,
+      "abs_metric": "combined_score",
+      "abs_value": 0.1274389007576754,
+      "artifact_id": "art_6556477e"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "evox",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

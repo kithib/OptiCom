@@ -1,0 +1,58 @@
+{
+  "task_slug": "math__second_autocorr_ineq",
+  "task_full_name": "math/second_autocorr_ineq",
+  "baseline": "opticom",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "second_autocorr_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-25T20:07:11",
+  "elapsed_sec": 19012.89,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9871513604507014,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9871513604507014,
+  "all_metrics": {
+    "runtime_score": 0.9871513604507014,
+    "score": 0.9871513604507014,
+    "c2": 0.8847639662176903,
+    "combined_score": 0.9871513604507014,
+    "loss": -0.5915742997440605,
+    "n_points": 128.0,
+    "eval_time": 128.66964077949524,
+    "execution_time_ms": 138644.62327957153
+  },
+  "best_artifact_id": "art_7e2a426b",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9739814971366343,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9739814971366343,
+      "artifact_id": "art_a795c4c1"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.9871513604507014,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9871513604507014,
+      "artifact_id": "art_7e2a426b"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opticom",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

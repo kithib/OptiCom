@@ -1,0 +1,72 @@
+{
+  "task_slug": "math__sums_diffs_finite_sets",
+  "task_full_name": "math/sums_diffs_finite_sets",
+  "baseline": "self_refine",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "sums_diffs_finite_sets",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-27T13:11:50",
+  "elapsed_sec": 14506.32,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9242295000544741,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9242295000544741,
+  "all_metrics": {
+    "runtime_score": 0.9242295000544741,
+    "score": 0.9242295000544741,
+    "c6_bound": 1.070643424987793,
+    "combined_score": 0.9242295000544741,
+    "set_size": 45.0,
+    "max_val": 200.0,
+    "eval_time": 214.15955257415771,
+    "execution_time_ms": 228086.279630661
+  },
+  "best_artifact_id": "art_7910bf88",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9141748651398476,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9141748651398476,
+      "artifact_id": "art_02ddbff2"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.9203952867790962,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9203952867790962,
+      "artifact_id": "art_7e86b26b"
+    },
+    {
+      "iter": 16,
+      "runtime_score": 0.9210780749667055,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9210780749667055,
+      "artifact_id": "art_a9088a75"
+    },
+    {
+      "iter": 23,
+      "runtime_score": 0.9242295000544741,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9242295000544741,
+      "artifact_id": "art_7910bf88"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "self_refine",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

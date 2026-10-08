@@ -1,0 +1,51 @@
+{
+  "task_slug": "math__first_autocorr_ineq",
+  "task_full_name": "math/first_autocorr_ineq",
+  "baseline": "voyager",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "first_autocorr_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T13:07:37",
+  "elapsed_sec": 3463.11,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9925498967080189,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9925498967080189,
+  "all_metrics": {
+    "runtime_score": 0.9925498967080189,
+    "score": 0.9925498967080189,
+    "c1": 1.5165927410125732,
+    "combined_score": 0.9925498967080189,
+    "loss": 1.5165928602218628,
+    "n_points": 800.0,
+    "eval_time": 58.54215955734253,
+    "execution_time_ms": 74360.71705818176
+  },
+  "best_artifact_id": "art_cdfada13",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9925498967080189,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9925498967080189,
+      "artifact_id": "art_cdfada13"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "voyager",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

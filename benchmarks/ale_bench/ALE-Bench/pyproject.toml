@@ -1,0 +1,194 @@
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ale_bench", "src/ale_bench_eval"]
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
+[project]
+name = "ale_bench"
+dynamic = ["version"]
+description = "The official library for the ALE-Bench"
+authors = [
+    { name = "Yuki-Imajuku", email = "yuki.imjk@gmail.com" },
+    { name = "Ino-Ichan", email = "sys.b11noway@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.15"
+license = { file = "LICENSE" }
+keywords = ["benchmark", "algorithmic programming", "atcoder", "AHC", "AI evaluation", "heuristic", "optimization", "estimation"]
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "ahocorapy",
+    "cairosvg",
+    "docker",
+    "huggingface-hub",
+    "pillow",
+    "polars>=1",
+    "pydantic>=2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-mock>=3.15.1",
+    "ruff>=0.15.9",
+    "ty>=0.0.28",
+]
+
+[project.urls]
+Repository = "https://github.com/SakanaAI/ALE-Bench"
+
+[project.optional-dependencies]
+eval = [
+    "fire>=0.7.0",
+    "genai-prices>=0.0.47",
+    "numpy>=2.0.2",
+    "pandas>=2.3.3",
+    "psutil>=7.0.0",
+    "pydantic-ai>=1.30.0",
+]
+
+[tool.uv]
+exclude-newer = "1 week"
+
+[tool.uv-dynamic-versioning]
+fallback-version = "0.0.0"
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "docker: marks tests as docker (deselect with '-m \"not docker\"')",
+]
+
+[tool.ruff]
+extend-exclude = [
+    "dockerfiles/tests",
+    "mcp",
+    "src/ale_bench_eval/codes",
+    "src/ale_bench_eval/prompts/texts.py",
+    "tests/judge/codes",
+]
+line-length = 120
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.ruff.lint]
+select = [
+    "E",       # errors
+    "W",       # warnings
+    "F",       # pyflakes
+    "I",       # isort
+    "N",       # pep8-naming
+    "YTT",     # flake8-2020
+    "ANN",     # flake8-annotations
+    "ASYNC",   # flake8-async
+    "S",       # flake8-bandit
+    "BLE",     # flake8-blind-except
+    "FBT",     # flake8-boolean-trap
+    "B",       # flake8-bugbear
+    "A",       # flake8-builtins
+    "COM",     # flake8-commas
+    "C4",      # flake8-comprehensions
+    "DTZ",     # flake8-datetimez
+    "T10",     # flake8-debugger
+    "EM",      # flake8-errmsg
+    "EXE",     # flake8-executable
+    "FA",      # flake8-future-annotations
+    "INT",     # flake8-gettext
+    "ISC",     # flake8-implicit-str-concat
+    "ICN",     # flake8-import-conventions
+    "LOG",     # flake8-logging
+    "G",       # flake8-logging-format
+    "INP",     # implicit-namespace-package
+    "PIE",     # flake8-pie
+    "T20",     # flake8-print
+    "PYI",     # flake8-pyi
+    "PT",      # flake8-pytest-style
+    "Q",       # flake8-quotes
+    "RSE",     # flake8-raise
+    "RET",     # flake8-return
+    "SLF",     # flake8-self
+    "SIM",     # flake8-simplify
+    "SLOT",    # flake8-slots
+    "TID",     # flake8-tidy-imports
+    "TC",      # flake8-type-checking
+    "ARG",     # flake8-unused-arguments
+    "PTH",     # flake8-use-pathlib
+    "FLY",     # flynt (f-string)
+    "PERF",    # perflint
+    "D",       # pydocstyle
+    "PGH",     # pygrep-hooks
+    "PL",      # pylint (convention/error/refactor/warning)
+    "UP",      # pyupgrade
+    "FURB",    # refurb
+    "RUF",     # ruff-specific
+    "TRY",     # tryceratops
+]
+ignore = [
+    "BLE001",  # allow broad except
+    "COM812",  # trailing comma (conflicts with ruff formatter)
+    "D203",    # blank line before class docstring (incompatible with D211)
+    "D213",    # multi-line summary on second line (incompatible with D212)
+    "FBT001",  # allow positional boolean arguments for API compatibility
+    "FBT002",  # allow boolean default positional arguments for API compatibility
+    "ISC001",  # implicit string concat (conflicts with ruff formatter)
+    "PLR0911", # too many return statements
+    "PLR0912", # too many branches
+    "PLR0913", # too many arguments
+    "PLR0915", # too many statements
+]
+
+[tool.ruff.lint.per-file-ignores]
+"src/ale_bench_eval/**/*.py" = [
+    "D",       # docstrings not required in evaluation code
+    "T201",    # print is fine in evaluation code
+]
+"tests/**/*.py" = [
+    "ARG",     # unused arguments (fixtures etc.)
+    "D",       # docstrings not required in tests
+    "INP001",  # implicit namespace package is fine in tests
+    "PLR2004", # magic values are fine in tests
+    "S101",    # assert is expected in tests
+    "SLF001",  # private member access for testing internals
+]
+
+[tool.ruff.lint.isort]
+case-sensitive = true
+combine-as-imports = true
+default-section = "third-party"
+known-first-party = [
+    "ale_bench",
+    "ale_bench_eval"
+]
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "local-folder"
+]
+split-on-trailing-comma = true
+
+[tool.ty.src]
+exclude = [
+    "dockerfiles/tests/**",
+    "mcp/**",
+    "src/ale_bench_eval/codes/**",
+    "tests/judge/codes/**",
+]

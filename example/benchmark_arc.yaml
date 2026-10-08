@@ -1,0 +1,129 @@
+# =====================================================================
+# OptiCom · Benchmark Run Config
+# ---------------------------------------------------------------------
+# 这份配置绑定到本仓库 benchmarks/ 目录中的一道题目。
+#
+# 用法：
+#   python run.py --config example/benchmark_arc.yaml
+#
+# 想换一道题？修改下方 benchmark.task_id 即可。想看有哪些 task_id，运行：
+#   python run.py --list-benchmarks --config example/benchmark_arc.yaml
+#[ADRS] (5)
+#   - cloudcast
+#   - eplb
+#   - llm_sql
+#   - prism
+#   - txn_scheduling
+# [ale_bench] (10)
+#   - ahc008
+#   - ahc011
+#   - ahc015
+#   - ahc016
+#   - ahc024
+#   - ahc025
+#   - ahc026
+#   - ahc027
+#   - ahc039
+#   - ahc046
+# [arc_benchmark] (1)
+#   - arc_benchmark
+# [frontier-cs-eval] (1)
+#   - frontier-cs-eval
+# [gpu_mode] (4)
+#   - grayscale
+#   - mla_decode
+#   - trimul
+#   - vecadd
+# [image_gen] (1)
+#   - sky_festival
+# [kernelbench] (1)
+#   - kernelbench
+# [math] (17)
+#   - circle_packing
+#   - circle_packing_rect
+#   - erdos_min_overlap
+#   - first_autocorr_ineq
+#   - heilbronn_convex_13
+#   - heilbronn_convex_14
+#   - heilbronn_triangle
+#   - hexagon_packing_11
+#   - hexagon_packing_12
+#   - matmul
+#   - minimizing_max_min_dist_2
+#   - minimizing_max_min_dist_3
+#   - second_autocorr_ineq
+#   - signal_processing
+#   - sums_diffs_finite_sets
+#   - third_autocorr_ineq
+#   - uncertainty_ineq
+# [prompt_optimization] (1)
+#   - hotpot_qa
+# python run.py -c example/benchmark_arc.yaml --benchmark heilbronn_convex_14 --max-iter 10
+# =====================================================================
+
+runner:
+  # 对数值/构造类 benchmark (heilbronn / circle_packing / hexagon_packing ...) ,
+  # 经验上需要 15~25 轮才能从 cold-start 推到接近 baseline 的解;
+  # 5 轮往往只够走到一个局部极值。
+  max_iterations: 20
+  stagnation_threshold: 4
+  # 绑定 benchmark 时，task_description 会被 benchmark 自己的
+  # system_message + initial_program 覆盖，这里可以不填。
+  task_description: null
+  formulator_mode: algorithm_tuning
+  # 覆盖 problem_formulator 模板里的资源预算; 对数值优化类任务, 默认 60min wall-clock 明显不够。
+  budget:
+    max_llm_calls: 80
+    max_sandbox_runs: 400
+    max_wall_clock_mins: 180
+    max_api_cost_usd: 20.0
+
+benchmark:
+  enabled: true
+  # benchmark 根目录（相对路径以本 yaml 所在目录为基准；绝对路径原样使用）
+  root: ../benchmarks
+  # 可以是 BenchmarkRegistry 发现的任何 task_id，例如：
+  #   arc_benchmark (benchmarks/arc_benchmark)
+  #   cloudcast     (benchmarks/ADRS/cloudcast)
+  #   eplb          (benchmarks/ADRS/eplb)
+  #   grayscale     (benchmarks/gpu_mode/grayscale)
+  #   ahc008        (benchmarks/ale_bench/ale-bench-lite-problems/ahc008)
+  task_id: arc_benchmark
+
+llm:
+  provider: openai
+  model: null
+  api_key: null
+  # 数值优化类任务更看重稳定性而非发散创造力, 降低温度收敛更快
+  temperature: 0.4
+  max_tokens: 8192
+  top_p: 0.95
+  timeout: 180
+  max_retries: 2
+
+harness:
+  python_timeout: 45
+  # Per-candidate benchmark timeout. Keep this below the evaluator's internal
+  # timeout so one slow candidate cannot block an iteration for too long.
+  benchmark_timeout: 300
+  python_executable: null # 留空则默认使用跑 run.py 的环境 (sys.executable)
+
+archive:
+  # 扩大 top_k, 让 controller 在 stagnation / recombination 时能挑到更多 exemplar
+  top_k: 5
+  objective_metric: null
+  maximize: true
+
+memory:
+  summarize_every_n_events: 3
+
+# ContextAssembler 压缩上限; 对 heilbronn/circle_packing 这类 180+ 行的数值脚本,
+# 默认 2000 会把关键 loss / bounds / 起点逻辑砍掉一半, 建议 4000+。
+context:
+  max_context_length: 8000
+  artifact_max_chars: 4000
+  evidence_max_chars: 1500
+
+evaluation:
+  enable_robustness_gate: false
+  cost_soft_limit_ms: 600000

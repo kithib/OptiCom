@@ -1,0 +1,70 @@
+{
+  "task_slug": "math__heilbronn_triangle",
+  "task_full_name": "math/heilbronn_triangle",
+  "baseline": "textgrad",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "heilbronn_triangle",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T18:39:12",
+  "elapsed_sec": 5107.39,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8557474313865991,
+  "previous_runtime_score": 0.6990159014682714,
+  "delta_vs_previous": 0.15673152991832773,
+  "abs_metric": "combined_score",
+  "abs_value": 0.8557474313865991,
+  "all_metrics": {
+    "runtime_score": 0.8557474313865991,
+    "score": 0.8557474313865991,
+    "min_area_normalized": 0.03126035943367113,
+    "combined_score": 0.8557474313865991,
+    "eval_time": 67.33032941818237,
+    "execution_time_ms": 69188.42911720276
+  },
+  "best_artifact_id": "art_ddc46de8",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.44185286730143486,
+      "abs_metric": "combined_score",
+      "abs_value": 0.44185286730143486,
+      "artifact_id": "art_4404b0e1"
+    },
+    {
+      "iter": 18,
+      "runtime_score": 0.7264511533543339,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7264511533543339,
+      "artifact_id": "art_ff578f77"
+    },
+    {
+      "iter": 22,
+      "runtime_score": 0.759715605067941,
+      "abs_metric": "combined_score",
+      "abs_value": 0.759715605067941,
+      "artifact_id": "art_85ec6d93"
+    },
+    {
+      "iter": 23,
+      "runtime_score": 0.8557474313865991,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8557474313865991,
+      "artifact_id": "art_ddc46de8"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "textgrad",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

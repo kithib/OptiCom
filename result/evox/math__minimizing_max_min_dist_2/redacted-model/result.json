@@ -1,0 +1,84 @@
+{
+  "task_slug": "math__minimizing_max_min_dist_2",
+  "task_full_name": "math/minimizing_max_min_dist_2",
+  "baseline": "evox",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "minimizing_max_min_dist_2",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T06:08:18",
+  "elapsed_sec": 8681.7,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.7160701809476626,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.7160701809476626,
+  "all_metrics": {
+    "runtime_score": 0.7160701809476626,
+    "score": 0.7160701809476626,
+    "min_max_ratio": 0.05555554325013091,
+    "combined_score": 0.7160701809476626,
+    "eval_time": 172.21882820129395,
+    "execution_time_ms": 181931.68926239014
+  },
+  "best_artifact_id": "art_8b33cb67",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.6737505837767489,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6737505837767489,
+      "artifact_id": "art_40f38816"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.6985312754885046,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6985312754885046,
+      "artifact_id": "art_2b061d2f"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 0.7012844930850587,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7012844930850587,
+      "artifact_id": "art_2ec4d797"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.7138203925177719,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7138203925177719,
+      "artifact_id": "art_0b24111c"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.7159947321840884,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7159947321840884,
+      "artifact_id": "art_7fe34599"
+    },
+    {
+      "iter": 20,
+      "runtime_score": 0.7160701809476626,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7160701809476626,
+      "artifact_id": "art_8b33cb67"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "evox",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

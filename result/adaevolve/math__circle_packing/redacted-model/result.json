@@ -1,0 +1,72 @@
+{
+  "task_slug": "math__circle_packing",
+  "task_full_name": "math/circle_packing",
+  "baseline": "adaevolve",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "circle_packing",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T02:32:48",
+  "elapsed_sec": 3051.47,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8259444540279454,
+  "previous_runtime_score": 0.7308701729095908,
+  "delta_vs_previous": 0.09507428111835459,
+  "abs_metric": "sum_radii",
+  "abs_value": 2.176363636363636,
+  "all_metrics": {
+    "runtime_score": 0.8259444540279454,
+    "score": 0.8259444540279454,
+    "sum_radii": 2.176363636363636,
+    "target_ratio": 0.8259444540279454,
+    "validity": 1.0,
+    "eval_time": 6.236802339553833,
+    "combined_score": 0.8259444540279454,
+    "execution_time_ms": 10182.136535644531
+  },
+  "best_artifact_id": "art_109d4599",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.6905840159126554,
+      "abs_metric": "sum_radii",
+      "abs_value": 1.8196888819298467,
+      "artifact_id": "art_c84acd3b"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.82226110056926,
+      "abs_metric": "sum_radii",
+      "abs_value": 2.166658,
+      "artifact_id": "art_77ce93f2"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 0.8222616698295068,
+      "abs_metric": "sum_radii",
+      "abs_value": 2.1666595000007502,
+      "artifact_id": "art_fec37975"
+    },
+    {
+      "iter": 12,
+      "runtime_score": 0.8259444540279454,
+      "abs_metric": "sum_radii",
+      "abs_value": 2.176363636363636,
+      "artifact_id": "art_109d4599"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "adaevolve",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "task_slug": "math__circle_packing_rect",
+  "task_full_name": "math/circle_packing_rect",
+  "baseline": "protegi",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "circle_packing_rect",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-23T00:54:01",
+  "elapsed_sec": 3314.58,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9968456671033409,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9968456671033409,
+  "all_metrics": {
+    "runtime_score": 0.9968456671033409,
+    "score": 0.9968456671033409,
+    "radii_sum": 2.358369511290353,
+    "combined_score": 0.9968456671033409,
+    "eval_time": 0.3352034091949463,
+    "execution_time_ms": 337.54825592041016
+  },
+  "best_artifact_id": "art_db4beb41",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9968456671033409,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9968456671033409,
+      "artifact_id": "art_db4beb41"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "protegi",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

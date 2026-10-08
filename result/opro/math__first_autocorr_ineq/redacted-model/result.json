@@ -1,0 +1,72 @@
+{
+  "task_slug": "math__first_autocorr_ineq",
+  "task_full_name": "math/first_autocorr_ineq",
+  "baseline": "opro",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "first_autocorr_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-25T03:32:14",
+  "elapsed_sec": 6965.35,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.994953736340329,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.994953736340329,
+  "all_metrics": {
+    "runtime_score": 0.994953736340329,
+    "score": 0.994953736340329,
+    "c1": 1.5129286050796509,
+    "combined_score": 0.994953736340329,
+    "loss": 1.5129286050796509,
+    "n_points": 1200.0,
+    "eval_time": 35.735474586486816,
+    "execution_time_ms": 54220.760107040405
+  },
+  "best_artifact_id": "art_d327f41c",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9899707176198845,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9899707176198845,
+      "artifact_id": "art_c6dc1db7"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.9930976494462191,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9930976494462191,
+      "artifact_id": "art_921dc00c"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.9936475708943561,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9936475708943561,
+      "artifact_id": "art_cb71329d"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.994953736340329,
+      "abs_metric": "combined_score",
+      "abs_value": 0.994953736340329,
+      "artifact_id": "art_d327f41c"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opro",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

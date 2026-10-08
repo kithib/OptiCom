@@ -1,0 +1,82 @@
+{
+  "task_slug": "math__signal_processing",
+  "task_full_name": "math/signal_processing",
+  "baseline": "reflexion",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "signal_processing",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-25T21:09:49",
+  "elapsed_sec": 3407.54,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.512441222371274,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.512441222371274,
+  "all_metrics": {
+    "runtime_score": 0.512441222371274,
+    "score": 0.512441222371274,
+    "combined_score": 0.512441222371274,
+    "composite_score": 0.43772849712001544,
+    "overall_score": 0.512441222371274,
+    "slope_changes": 298.6,
+    "lag_error": 0.10292018621290464,
+    "avg_error": 0.3200867716840812,
+    "false_reversals": 242.0,
+    "correlation": 0.927659767642659,
+    "noise_reduction": 0.39262942185570904,
+    "smoothness_score": 0.06277463904582548,
+    "responsiveness_score": 0.9066839219197707,
+    "accuracy_score": 0.927659767642659,
+    "efficiency_score": 1.0,
+    "execution_time": 0.21775875091552735,
+    "success_rate": 1.0,
+    "execution_time_ms": 16515.519380569458
+  },
+  "best_artifact_id": "art_2afca540",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.5107557945936803,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5107557945936803,
+      "artifact_id": "art_1da371b4"
+    },
+    {
+      "iter": 22,
+      "runtime_score": 0.511095533279997,
+      "abs_metric": "combined_score",
+      "abs_value": 0.511095533279997,
+      "artifact_id": "art_c50fb57f"
+    },
+    {
+      "iter": 25,
+      "runtime_score": 0.511818606897001,
+      "abs_metric": "combined_score",
+      "abs_value": 0.511818606897001,
+      "artifact_id": "art_7701aaf6"
+    },
+    {
+      "iter": 29,
+      "runtime_score": 0.512441222371274,
+      "abs_metric": "combined_score",
+      "abs_value": 0.512441222371274,
+      "artifact_id": "art_2afca540"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "reflexion",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

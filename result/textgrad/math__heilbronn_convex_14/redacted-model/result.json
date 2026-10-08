@@ -1,0 +1,119 @@
+{
+  "task_slug": "math__heilbronn_convex_14",
+  "task_full_name": "math/heilbronn_convex_14",
+  "baseline": "textgrad",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "heilbronn_convex_14",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-22T18:41:09",
+  "elapsed_sec": 2354.16,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.738406136818513,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.738406136818513,
+  "all_metrics": {
+    "runtime_score": 0.738406136818513,
+    "score": 0.738406136818513,
+    "min_area_normalized": 0.020553956786793455,
+    "combined_score": 0.738406136818513,
+    "eval_time": 14.434701442718506,
+    "execution_time_ms": 14436.87105178833
+  },
+  "best_artifact_id": "art_31c48e2a",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.18397912369627484,
+      "abs_metric": "combined_score",
+      "abs_value": 0.18397912369627484,
+      "artifact_id": "art_6d299016"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.42576251481937066,
+      "abs_metric": "combined_score",
+      "abs_value": 0.42576251481937066,
+      "artifact_id": "art_f40ea7db"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 0.45857881169188663,
+      "abs_metric": "combined_score",
+      "abs_value": 0.45857881169188663,
+      "artifact_id": "art_97fc4b68"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.5052995637364796,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5052995637364796,
+      "artifact_id": "art_598a4766"
+    },
+    {
+      "iter": 11,
+      "runtime_score": 0.5138666186419759,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5138666186419759,
+      "artifact_id": "art_8164da67"
+    },
+    {
+      "iter": 14,
+      "runtime_score": 0.5231441888075219,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5231441888075219,
+      "artifact_id": "art_e5de72b0"
+    },
+    {
+      "iter": 16,
+      "runtime_score": 0.5693590275292959,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5693590275292959,
+      "artifact_id": "art_c177f743"
+    },
+    {
+      "iter": 17,
+      "runtime_score": 0.5715436495479606,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5715436495479606,
+      "artifact_id": "art_f6c9b498"
+    },
+    {
+      "iter": 18,
+      "runtime_score": 0.7067112163157118,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7067112163157118,
+      "artifact_id": "art_4dd11548"
+    },
+    {
+      "iter": 19,
+      "runtime_score": 0.7144124516123558,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7144124516123558,
+      "artifact_id": "art_cff03dd4"
+    },
+    {
+      "iter": 24,
+      "runtime_score": 0.738406136818513,
+      "abs_metric": "combined_score",
+      "abs_value": 0.738406136818513,
+      "artifact_id": "art_31c48e2a"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "textgrad",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

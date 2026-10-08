@@ -1,0 +1,63 @@
+{
+  "task_slug": "ADRS__llm_sql",
+  "task_full_name": "ADRS/llm_sql",
+  "baseline": "voyager",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "llm_sql",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-11T04:22:33",
+  "elapsed_sec": 14458.88,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.6450970417239654,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.6450970417239654,
+  "all_metrics": {
+    "runtime_score": 0.6450970417239654,
+    "score": 0.6450970417239654,
+    "combined_score": 0.6450970417239654,
+    "runs_successfully": 1.0,
+    "total_runtime": 2.4709300994873047,
+    "execution_time_ms": 88048.00987243652
+  },
+  "best_artifact_id": "art_19bd85c1",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 2,
+      "runtime_score": 0.602740359975112,
+      "abs_metric": "combined_score",
+      "abs_value": 0.602740359975112,
+      "artifact_id": "art_d69fb326"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.6385561447290885,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6385561447290885,
+      "artifact_id": "art_b59571b5"
+    },
+    {
+      "iter": 28,
+      "runtime_score": 0.6450970417239654,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6450970417239654,
+      "artifact_id": "art_19bd85c1"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "voyager",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

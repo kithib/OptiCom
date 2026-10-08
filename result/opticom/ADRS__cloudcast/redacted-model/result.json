@@ -1,0 +1,54 @@
+{
+  "task_slug": "ADRS__cloudcast",
+  "task_full_name": "ADRS/cloudcast",
+  "baseline": "opticom",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "cloudcast",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-21T14:22:25",
+  "elapsed_sec": 615.75,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.0010915652478476832,
+  "previous_runtime_score": 0.0009651245162391779,
+  "delta_vs_previous": 0.00012644073160850535,
+  "abs_metric": "combined_score",
+  "abs_value": 0.0010915652478476832,
+  "all_metrics": {
+    "runtime_score": 0.0010915652478476832,
+    "score": 0.0010915652478476832,
+    "combined_score": 0.0010915652478476832,
+    "runs_successfully": 1.0,
+    "total_cost": 915.1156440000001,
+    "avg_cost": 183.02312880000002,
+    "successful_configs": 5.0,
+    "failed_configs": 0.0,
+    "cost_score": 0.0010915652478476832,
+    "success_rate": 1.0,
+    "execution_time_ms": 3285.2728366851807
+  },
+  "best_artifact_id": "art_725653c1",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.0010915652478476832,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0010915652478476832,
+      "artifact_id": "art_725653c1"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opticom",
+    "max_iterations": 2,
+    "stagnation_threshold": 4
+  }
+}

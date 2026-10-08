@@ -1,0 +1,64 @@
+{
+  "task_slug": "math__matmul",
+  "task_full_name": "math/matmul",
+  "baseline": "reflexion",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "matmul",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T12:06:55",
+  "elapsed_sec": 12699.32,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.8,
+  "all_metrics": {
+    "runtime_score": 0.8,
+    "score": 0.8,
+    "combined_score": 0.8,
+    "loss": 0.0,
+    "rank": 40.0,
+    "eval_time": 90.53969144821167,
+    "execution_time_ms": 104899.45387840271
+  },
+  "best_artifact_id": "art_bf9ad514",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 2,
+      "runtime_score": 0.5818181818181818,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5818181818181818,
+      "artifact_id": "art_4f817be3"
+    },
+    {
+      "iter": 12,
+      "runtime_score": 0.6666666666666666,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6666666666666666,
+      "artifact_id": "art_c31e3e2b"
+    },
+    {
+      "iter": 28,
+      "runtime_score": 0.8,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8,
+      "artifact_id": "art_bf9ad514"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "reflexion",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

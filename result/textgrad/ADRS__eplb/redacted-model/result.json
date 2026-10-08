@@ -1,0 +1,73 @@
+{
+  "task_slug": "ADRS__eplb",
+  "task_full_name": "ADRS/eplb",
+  "baseline": "textgrad",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "eplb",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-08T20:53:37",
+  "elapsed_sec": 5226.01,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.1274444243966116,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.1274444243966116,
+  "all_metrics": {
+    "runtime_score": 0.1274444243966116,
+    "score": 0.1274444243966116,
+    "balancedness_score_gpu": 0.6633429393192228,
+    "balancedness_score_expert": 0.2505991103047041,
+    "times_algorithm": 0.012628723951903257,
+    "times_inference": 0.4662288867614486,
+    "speed_score": 0.004289738488519102,
+    "combined_score": 0.1274444243966116,
+    "execution_time_ms": 24506.487131118774
+  },
+  "best_artifact_id": "art_0784278f",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.12604594166055758,
+      "abs_metric": "combined_score",
+      "abs_value": 0.12604594166055758,
+      "artifact_id": "art_c250cc49"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.1274151511981544,
+      "abs_metric": "combined_score",
+      "abs_value": 0.1274151511981544,
+      "artifact_id": "art_f9aca958"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 0.12741670154301166,
+      "abs_metric": "combined_score",
+      "abs_value": 0.12741670154301166,
+      "artifact_id": "art_3bbd5ea9"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.1274444243966116,
+      "abs_metric": "combined_score",
+      "abs_value": 0.1274444243966116,
+      "artifact_id": "art_0784278f"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "textgrad",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

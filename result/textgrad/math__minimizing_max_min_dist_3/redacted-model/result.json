@@ -1,0 +1,77 @@
+{
+  "task_slug": "math__minimizing_max_min_dist_3",
+  "task_full_name": "math/minimizing_max_min_dist_3",
+  "baseline": "textgrad",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "minimizing_max_min_dist_3",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-25T17:18:17",
+  "elapsed_sec": 3238.46,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9414971920582501,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9414971920582501,
+  "all_metrics": {
+    "runtime_score": 0.9414971920582501,
+    "score": 0.9414971920582501,
+    "min_max_ratio": 0.22600363544465046,
+    "combined_score": 0.9414971920582501,
+    "eval_time": 20.006077527999878,
+    "execution_time_ms": 30170.742750167847
+  },
+  "best_artifact_id": "art_5b638f03",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.6943082945000002,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6943082945000002,
+      "artifact_id": "art_7d14c1d4"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.8710477450356028,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8710477450356028,
+      "artifact_id": "art_1d8d3407"
+    },
+    {
+      "iter": 23,
+      "runtime_score": 0.9350333690004257,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9350333690004257,
+      "artifact_id": "art_77bdcb4f"
+    },
+    {
+      "iter": 26,
+      "runtime_score": 0.9375917817099749,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9375917817099749,
+      "artifact_id": "art_17077ce2"
+    },
+    {
+      "iter": 28,
+      "runtime_score": 0.9414971920582501,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9414971920582501,
+      "artifact_id": "art_5b638f03"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "textgrad",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

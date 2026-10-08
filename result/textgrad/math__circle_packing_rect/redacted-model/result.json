@@ -1,0 +1,63 @@
+{
+  "task_slug": "math__circle_packing_rect",
+  "task_full_name": "math/circle_packing_rect",
+  "baseline": "textgrad",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "circle_packing_rect",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-22T23:24:10",
+  "elapsed_sec": 1793.82,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9868972677697428,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9868972677697428,
+  "all_metrics": {
+    "runtime_score": 0.9868972677697428,
+    "score": 0.9868972677697428,
+    "radii_sum": 2.334833268470865,
+    "combined_score": 0.9868972677697428,
+    "eval_time": 3.6745498180389404,
+    "execution_time_ms": 3678.074598312378
+  },
+  "best_artifact_id": "art_9a7b83d3",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9667898811524164,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9667898811524164,
+      "artifact_id": "art_61b77761"
+    },
+    {
+      "iter": 4,
+      "runtime_score": 0.9799386662872238,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9799386662872238,
+      "artifact_id": "art_3a5f5fed"
+    },
+    {
+      "iter": 17,
+      "runtime_score": 0.9868972677696766,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9868972677696766,
+      "artifact_id": "art_700527c0"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "textgrad",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

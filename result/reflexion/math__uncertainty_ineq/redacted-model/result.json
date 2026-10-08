@@ -1,0 +1,50 @@
+{
+  "task_slug": "math__uncertainty_ineq",
+  "task_full_name": "math/uncertainty_ineq",
+  "baseline": "reflexion",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "uncertainty_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T06:30:15",
+  "elapsed_sec": 5340.7,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.880431354066704,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.880431354066704,
+  "all_metrics": {
+    "runtime_score": 0.880431354066704,
+    "score": 0.880431354066704,
+    "c4_bound": 0.3652609960645907,
+    "combined_score": 0.880431354066704,
+    "r_max": 1.5149265737186133,
+    "eval_time": 248.93143343925476,
+    "execution_time_ms": 277115.5478954315
+  },
+  "best_artifact_id": "art_9275a6b7",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.880431354066704,
+      "abs_metric": "combined_score",
+      "abs_value": 0.880431354066704,
+      "artifact_id": "art_9275a6b7"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "reflexion",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "task_slug": "math__second_autocorr_ineq",
+  "task_full_name": "math/second_autocorr_ineq",
+  "baseline": "opro",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "second_autocorr_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-28T01:32:38",
+  "elapsed_sec": 3671.83,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9826880243386283,
+  "previous_runtime_score": 0.9777228582718616,
+  "delta_vs_previous": 0.00496516606676678,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9826880243386283,
+  "all_metrics": {
+    "runtime_score": 0.9826880243386283,
+    "score": 0.9826880243386283,
+    "c2": 0.8807635675764146,
+    "combined_score": 0.9826880243386283,
+    "loss": -0.8790247440338135,
+    "n_points": 180.0,
+    "eval_time": 25.104676485061646,
+    "execution_time_ms": 41956.41255378723
+  },
+  "best_artifact_id": "art_19e41edb",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9811347595904405,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9811347595904405,
+      "artifact_id": "art_a4a7937a"
+    },
+    {
+      "iter": 16,
+      "runtime_score": 0.981525988990572,
+      "abs_metric": "combined_score",
+      "abs_value": 0.981525988990572,
+      "artifact_id": "art_16681c82"
+    },
+    {
+      "iter": 19,
+      "runtime_score": 0.9822996628324471,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9822996628324471,
+      "artifact_id": "art_745525f3"
+    },
+    {
+      "iter": 20,
+      "runtime_score": 0.9826880243386283,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9826880243386283,
+      "artifact_id": "art_19e41edb"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opro",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

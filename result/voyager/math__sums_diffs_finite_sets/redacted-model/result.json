@@ -1,0 +1,79 @@
+{
+  "task_slug": "math__sums_diffs_finite_sets",
+  "task_full_name": "math/sums_diffs_finite_sets",
+  "baseline": "voyager",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "sums_diffs_finite_sets",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-29T02:53:20",
+  "elapsed_sec": 2808.09,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9188460014662669,
+  "previous_runtime_score": 0.8671823668924097,
+  "delta_vs_previous": 0.05166363457385725,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9188460014662669,
+  "all_metrics": {
+    "runtime_score": 0.9188460014662669,
+    "score": 0.9188460014662669,
+    "c6_bound": 1.0644070871879767,
+    "combined_score": 0.9188460014662669,
+    "set_size": 25.0,
+    "max_val": 97.0,
+    "eval_time": 6.067187547683716,
+    "execution_time_ms": 10285.635471343994
+  },
+  "best_artifact_id": "art_b39e2ed9",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 2,
+      "runtime_score": 0.870521437541635,
+      "abs_metric": "combined_score",
+      "abs_value": 0.870521437541635,
+      "artifact_id": "art_5cf434d4"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.8845397825493718,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8845397825493718,
+      "artifact_id": "art_64b9ddb4"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 0.8845621095283023,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8845621095283023,
+      "artifact_id": "art_48e10be3"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.9011620586674506,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9011620586674506,
+      "artifact_id": "art_578ef765"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.9188460014662669,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9188460014662669,
+      "artifact_id": "art_b39e2ed9"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "voyager",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "task_slug": "math__circle_packing",
+  "task_full_name": "math/circle_packing",
+  "baseline": "voyager",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "circle_packing",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T08:37:01",
+  "elapsed_sec": 3024.9,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.6818194933133868,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "sum_radii",
+  "abs_value": 1.7965943648807738,
+  "all_metrics": {
+    "runtime_score": 0.6818194933133868,
+    "score": 0.6818194933133868,
+    "sum_radii": 1.7965943648807738,
+    "target_ratio": 0.6818194933133868,
+    "validity": 1.0,
+    "eval_time": 21.65731191635132,
+    "combined_score": 0.6818194933133868,
+    "execution_time_ms": 23792.348384857178
+  },
+  "best_artifact_id": "art_772ca5cd",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.6694012233953989,
+      "abs_metric": "sum_radii",
+      "abs_value": 1.763872223646876,
+      "artifact_id": "art_17fe7171"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 0.6749694207605522,
+      "abs_metric": "sum_radii",
+      "abs_value": 1.7785444237040549,
+      "artifact_id": "art_15060046"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.6806719166419494,
+      "abs_metric": "sum_radii",
+      "abs_value": 1.7935705003515363,
+      "artifact_id": "art_6dadab31"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.6818194933133868,
+      "abs_metric": "sum_radii",
+      "abs_value": 1.7965943648807738,
+      "artifact_id": "art_772ca5cd"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "voyager",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

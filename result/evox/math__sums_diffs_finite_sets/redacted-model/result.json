@@ -1,0 +1,47 @@
+{
+  "task_slug": "math__sums_diffs_finite_sets",
+  "task_full_name": "math/sums_diffs_finite_sets",
+  "baseline": "evox",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "sums_diffs_finite_sets",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T16:37:46",
+  "elapsed_sec": 4214.96,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.0,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.0,
+  "all_metrics": {
+    "runtime_score": 0.0,
+    "score": 0.0,
+    "combined_score": 0.0,
+    "execution_time_ms": 19065.702438354492
+  },
+  "best_artifact_id": "art_aa738568",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.0,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0,
+      "artifact_id": "art_aa738568"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "evox",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

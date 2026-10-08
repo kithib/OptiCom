@@ -1,0 +1,75 @@
+{
+  "task_slug": "math__signal_processing",
+  "task_full_name": "math/signal_processing",
+  "baseline": "opro",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "signal_processing",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T18:27:42",
+  "elapsed_sec": 4691.65,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.5297541420131131,
+  "previous_runtime_score": 0.5190632498662848,
+  "delta_vs_previous": 0.01069089214682828,
+  "abs_metric": "combined_score",
+  "abs_value": 0.5297541420131131,
+  "all_metrics": {
+    "runtime_score": 0.5297541420131131,
+    "score": 0.5297541420131131,
+    "combined_score": 0.5297541420131131,
+    "composite_score": 0.4396922372508899,
+    "overall_score": 0.5297541420131131,
+    "slope_changes": 334.2,
+    "lag_error": 0.13164719613991832,
+    "avg_error": 0.24054302400386157,
+    "false_reversals": 266.8,
+    "correlation": 0.9354056005871412,
+    "noise_reduction": 0.5550307222401324,
+    "smoothness_score": 0.0564652738565782,
+    "responsiveness_score": 0.8836676337033567,
+    "accuracy_score": 0.9354056005871412,
+    "efficiency_score": 1.0,
+    "execution_time": 0.1572803020477295,
+    "success_rate": 1.0,
+    "execution_time_ms": 9299.856901168823
+  },
+  "best_artifact_id": "art_ba362a32",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.5080521095349412,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5080521095349412,
+      "artifact_id": "art_1f9a9066"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.5130820459614146,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5130820459614146,
+      "artifact_id": "art_b48bbb98"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.5297541420131131,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5297541420131131,
+      "artifact_id": "art_ba362a32"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opro",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

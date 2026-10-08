@@ -1,0 +1,54 @@
+{
+  "task_slug": "ADRS__prism",
+  "task_full_name": "ADRS/prism",
+  "baseline": "opro",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "prism",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T19:05:20",
+  "elapsed_sec": 1721.88,
+  "objective_key": "score",
+  "maximize": true,
+  "runtime_score": 0.9584471402711798,
+  "previous_runtime_score": 22.66979637930192,
+  "delta_vs_previous": 1.3518704947700861,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9584471402711798,
+  "all_metrics": {
+    "max_kvpr": 0.04343734124335901,
+    "execution_time": 0.0001419210433959961,
+    "success_rate": 1.0,
+    "combined_score": 0.9584471402711798,
+    "avg_case_score": 0.9584471402711798,
+    "successful_runs": 50.0,
+    "total_cases": 50.0,
+    "score": 0.9584471402711798
+  },
+  "best_artifact_id": "art_fc56e761",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 24.021666874072007,
+      "abs_metric": "combined_score",
+      "abs_value": 24.021666874072007,
+      "artifact_id": "art_fc56e761"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opro",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  },
+  "rescored_at": "2026-06-24T23:25:37",
+  "rescored_from_runtime_score": 24.021666874072007,
+  "rescored_program_path": "result/opro/ADRS__prism/redacted-model/best_program.py"
+}

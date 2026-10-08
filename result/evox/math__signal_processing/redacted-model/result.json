@@ -1,0 +1,68 @@
+{
+  "task_slug": "math__signal_processing",
+  "task_full_name": "math/signal_processing",
+  "baseline": "evox",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "signal_processing",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T01:59:40",
+  "elapsed_sec": 7239.1,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.5558314128551337,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.5558314128551337,
+  "all_metrics": {
+    "runtime_score": 0.5558314128551337,
+    "score": 0.5558314128551337,
+    "combined_score": 0.5558314128551337,
+    "composite_score": 0.5200960507120141,
+    "overall_score": 0.5558314128551337,
+    "slope_changes": 62.4,
+    "lag_error": 0.23138713059151775,
+    "avg_error": 0.47988932105854865,
+    "false_reversals": 51.6,
+    "correlation": 0.8362185030326806,
+    "noise_reduction": 0.32005602643403547,
+    "smoothness_score": 0.24271844660194175,
+    "responsiveness_score": 0.8120922942565048,
+    "accuracy_score": 0.8362185030326806,
+    "efficiency_score": 1.0,
+    "execution_time": 0.0937459945678711,
+    "success_rate": 1.0,
+    "execution_time_ms": 13344.426155090332
+  },
+  "best_artifact_id": "art_1d616ffe",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.5084018030032286,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5084018030032286,
+      "artifact_id": "art_3f66f511"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.5558314128551337,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5558314128551337,
+      "artifact_id": "art_1d616ffe"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "evox",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "task_slug": "math__heilbronn_triangle",
+  "task_full_name": "math/heilbronn_triangle",
+  "baseline": "protegi",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "heilbronn_triangle",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-25T09:37:18",
+  "elapsed_sec": 1705.51,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8281877575716907,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.8281877575716907,
+  "all_metrics": {
+    "runtime_score": 0.8281877575716907,
+    "score": 0.8281877575716907,
+    "min_area_normalized": 0.03025360758408297,
+    "combined_score": 0.8281877575716907,
+    "eval_time": 2.3096354007720947,
+    "execution_time_ms": 5002.312183380127
+  },
+  "best_artifact_id": "art_43826ff5",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.34261800163469125,
+      "abs_metric": "combined_score",
+      "abs_value": 0.34261800163469125,
+      "artifact_id": "art_aae4e9e2"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.4421265945698985,
+      "abs_metric": "combined_score",
+      "abs_value": 0.4421265945698985,
+      "artifact_id": "art_eeb3192e"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.5262536951026763,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5262536951026763,
+      "artifact_id": "art_68705c19"
+    },
+    {
+      "iter": 4,
+      "runtime_score": 0.5622029473278651,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5622029473278651,
+      "artifact_id": "art_46ade925"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 0.7065626275452148,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7065626275452148,
+      "artifact_id": "art_9e065d91"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.7294862908510052,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7294862908510052,
+      "artifact_id": "art_3cb2917f"
+    },
+    {
+      "iter": 15,
+      "runtime_score": 0.7441279526306825,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7441279526306825,
+      "artifact_id": "art_87af4ae6"
+    },
+    {
+      "iter": 17,
+      "runtime_score": 0.8281877575716907,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8281877575716907,
+      "artifact_id": "art_43826ff5"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "protegi",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

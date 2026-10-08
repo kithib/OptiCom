@@ -1,0 +1,63 @@
+{
+  "task_slug": "ADRS__llm_sql",
+  "task_full_name": "ADRS/llm_sql",
+  "baseline": "lats",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "llm_sql",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-11T13:56:39",
+  "elapsed_sec": 10371.42,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.6862953628762273,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.6862953628762273,
+  "all_metrics": {
+    "runtime_score": 0.6862953628762273,
+    "score": 0.6862953628762273,
+    "combined_score": 0.6862953628762273,
+    "runs_successfully": 1.0,
+    "total_runtime": 1.0441722869873047,
+    "execution_time_ms": 78714.7388458252
+  },
+  "best_artifact_id": "art_f2092086",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 4,
+      "runtime_score": 0.6374934120344509,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6374934120344509,
+      "artifact_id": "art_770dca53"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.6570172666444954,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6570172666444954,
+      "artifact_id": "art_4b555e7c"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 0.6862953628762273,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6862953628762273,
+      "artifact_id": "art_f2092086"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "lats",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

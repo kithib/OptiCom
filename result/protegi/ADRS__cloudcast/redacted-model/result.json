@@ -1,0 +1,68 @@
+{
+  "task_slug": "ADRS__cloudcast",
+  "task_full_name": "ADRS/cloudcast",
+  "baseline": "protegi",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "cloudcast",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-08T22:24:24",
+  "elapsed_sec": 4627.07,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.0010050576511119254,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.0010050576511119254,
+  "all_metrics": {
+    "runtime_score": 0.0010050576511119254,
+    "score": 0.0010050576511119254,
+    "combined_score": 0.0010050576511119254,
+    "runs_successfully": 1.0,
+    "total_cost": 993.9678000000001,
+    "avg_cost": 198.79356,
+    "successful_configs": 5.0,
+    "failed_configs": 0.0,
+    "cost_score": 0.0010050576511119254,
+    "success_rate": 1.0,
+    "execution_time_ms": 14154.624700546265
+  },
+  "best_artifact_id": "art_6daaeb61",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.0009651245162391779,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0009651245162391779,
+      "artifact_id": "art_49f7cf05"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 0.000986467781950897,
+      "abs_metric": "combined_score",
+      "abs_value": 0.000986467781950897,
+      "artifact_id": "art_11c65a6d"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.0010050576511119254,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0010050576511119254,
+      "artifact_id": "art_6daaeb61"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "protegi",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "task_slug": "ADRS__prism",
+  "task_full_name": "ADRS/prism",
+  "baseline": "dspy",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "prism",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-06T01:16:09",
+  "elapsed_sec": 3664.61,
+  "objective_key": "score",
+  "maximize": true,
+  "runtime_score": 0.9619635601135422,
+  "previous_runtime_score": 25.55261267031648,
+  "delta_vs_previous": 0.7033590792187567,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9619635601135422,
+  "all_metrics": {
+    "max_kvpr": 0.039594596078782913,
+    "execution_time": 0.3621076154708862,
+    "success_rate": 1.0,
+    "combined_score": 0.9619635601135422,
+    "avg_case_score": 0.9619635601135422,
+    "successful_runs": 50.0,
+    "total_cases": 50.0,
+    "score": 0.9619635601135422
+  },
+  "best_artifact_id": "art_0b374454",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 24.021666874072007,
+      "abs_metric": "combined_score",
+      "abs_value": 24.021666874072007,
+      "artifact_id": "art_66ddd2b3"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 24.315820063186898,
+      "abs_metric": "combined_score",
+      "abs_value": 24.315820063186898,
+      "artifact_id": "art_2c4e7396"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 24.500257935209223,
+      "abs_metric": "combined_score",
+      "abs_value": 24.500257935209223,
+      "artifact_id": "art_79d6388b"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 24.980954554399272,
+      "abs_metric": "combined_score",
+      "abs_value": 24.980954554399272,
+      "artifact_id": "art_9c91e513"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 25.336794540527418,
+      "abs_metric": "combined_score",
+      "abs_value": 25.336794540527418,
+      "artifact_id": "art_b3b68009"
+    },
+    {
+      "iter": 11,
+      "runtime_score": 25.456235617955343,
+      "abs_metric": "combined_score",
+      "abs_value": 25.456235617955343,
+      "artifact_id": "art_267a1ef0"
+    },
+    {
+      "iter": 12,
+      "runtime_score": 26.255971749535238,
+      "abs_metric": "combined_score",
+      "abs_value": 26.255971749535238,
+      "artifact_id": "art_0b374454"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "dspy",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  },
+  "rescored_at": "2026-06-24T23:25:37",
+  "rescored_from_runtime_score": 26.255971749535238,
+  "rescored_program_path": "result/dspy/ADRS__prism/redacted-model/best_program.py"
+}

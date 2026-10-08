@@ -1,0 +1,86 @@
+{
+  "task_slug": "math__first_autocorr_ineq",
+  "task_full_name": "math/first_autocorr_ineq",
+  "baseline": "adaevolve",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "first_autocorr_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-28T23:16:58",
+  "elapsed_sec": 5435.14,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.994548906784765,
+  "previous_runtime_score": 0.9924989537257363,
+  "delta_vs_previous": 0.002049953059028775,
+  "abs_metric": "combined_score",
+  "abs_value": 0.994548906784765,
+  "all_metrics": {
+    "runtime_score": 0.994548906784765,
+    "score": 0.994548906784765,
+    "c1": 1.5135444402694702,
+    "combined_score": 0.994548906784765,
+    "loss": 1.5135444402694702,
+    "n_points": 1800.0,
+    "eval_time": 65.0228316783905,
+    "execution_time_ms": 74305.07826805115
+  },
+  "best_artifact_id": "art_e56aa956",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9852863914480595,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9852863914480595,
+      "artifact_id": "art_397354b8"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.9911461607903913,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9911461607903913,
+      "artifact_id": "art_3d94ebc2"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 0.9930200983360499,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9930200983360499,
+      "artifact_id": "art_b4511280"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.9932174752757023,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9932174752757023,
+      "artifact_id": "art_a55d7d19"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.9932625541442057,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9932625541442057,
+      "artifact_id": "art_52cc1dad"
+    },
+    {
+      "iter": 11,
+      "runtime_score": 0.994548906784765,
+      "abs_metric": "combined_score",
+      "abs_value": 0.994548906784765,
+      "artifact_id": "art_e56aa956"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "adaevolve",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

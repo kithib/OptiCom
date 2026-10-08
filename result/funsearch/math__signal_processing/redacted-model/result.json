@@ -1,0 +1,68 @@
+{
+  "task_slug": "math__signal_processing",
+  "task_full_name": "math/signal_processing",
+  "baseline": "funsearch",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "signal_processing",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-27T02:01:36",
+  "elapsed_sec": 3894.56,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.5182851098681183,
+  "previous_runtime_score": 0.5158121295752289,
+  "delta_vs_previous": 0.0024729802928893374,
+  "abs_metric": "combined_score",
+  "abs_value": 0.5182851098681183,
+  "all_metrics": {
+    "runtime_score": 0.5182851098681183,
+    "score": 0.5182851098681183,
+    "combined_score": 0.5182851098681183,
+    "composite_score": 0.44012420805101293,
+    "overall_score": 0.5182851098681183,
+    "slope_changes": 198.2,
+    "lag_error": 0.18295527147198723,
+    "avg_error": 0.34450130465161866,
+    "false_reversals": 157.2,
+    "correlation": 0.9257361631377654,
+    "noise_reduction": 0.3875638833730017,
+    "smoothness_score": 0.09165902841429881,
+    "responsiveness_score": 0.8453404994388921,
+    "accuracy_score": 0.9257361631377654,
+    "efficiency_score": 1.0,
+    "execution_time": 0.1861186981201172,
+    "success_rate": 1.0,
+    "execution_time_ms": 10282.959699630737
+  },
+  "best_artifact_id": "art_0e814054",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.5177092398365692,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5177092398365692,
+      "artifact_id": "art_5a1748c2"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.5182851098681183,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5182851098681183,
+      "artifact_id": "art_0e814054"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "funsearch",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

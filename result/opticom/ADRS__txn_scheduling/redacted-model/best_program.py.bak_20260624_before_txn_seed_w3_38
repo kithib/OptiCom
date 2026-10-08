@@ -1,0 +1,172 @@
+import time
+
+from txn_simulator import Workload
+from workloads import WORKLOAD_1, WORKLOAD_2, WORKLOAD_3
+
+
+def get_best_schedule(workload, num_seqs):
+    n = workload.num_txns
+    deadline = time.time() + (70.0 if n >= 90 else 8.0)
+    cache = {}
+
+    def valid(seq):
+        return len(seq) == n and len(set(seq)) == n and set(seq) == set(range(n))
+
+    def cost(seq):
+        key = tuple(seq)
+        cached = cache.get(key)
+        if cached is not None:
+            return cached
+        value = workload.get_opt_seq_cost(list(seq))
+        if len(cache) < 60000:
+            cache[key] = value
+        return value
+
+    def txn_features(txn_id):
+        txn = workload.txns[txn_id]
+        writes = sum(1 for op in txn if op[0] == "w")
+        reads = sum(1 for op in txn if op[0] == "r")
+        keys = {op[1] for op in txn}
+        write_keys = {op[1] for op in txn if op[0] == "w"}
+        first_write = min([op[2] for op in txn if op[0] == "w"] or [10**9])
+        last_write = max([op[2] for op in txn if op[0] == "w"] or [-1])
+        return (len(txn), writes, reads, len(keys), len(write_keys), first_write, last_write)
+
+    features = [txn_features(txn_id) for txn_id in range(n)]
+    seeds = []
+
+    def add_seed(seq):
+        seq = list(seq)
+        if valid(seq):
+            seeds.append((cost(seq), seq))
+
+    base = list(range(n))
+    add_seed(base)
+    add_seed(reversed(base))
+    sort_keys = [
+        lambda i: features[i][0],
+        lambda i: features[i][1],
+        lambda i: -features[i][1],
+        lambda i: (features[i][1], features[i][0]),
+        lambda i: (features[i][5], features[i][1]),
+        lambda i: (-features[i][5], features[i][1]),
+        lambda i: (features[i][4], features[i][1], features[i][0]),
+        lambda i: (-features[i][4], features[i][5], i),
+    ]
+    for key in sort_keys:
+        add_seed(sorted(range(n), key=key))
+
+    def greedy_append():
+        seq = []
+        remaining = set(range(n))
+        while remaining and time.time() < deadline:
+            best = None
+            for txn_id in list(remaining):
+                c = cost(seq + [txn_id])
+                if best is None or c < best[0]:
+                    best = (c, txn_id)
+            if best is None:
+                break
+            seq.append(best[1])
+            remaining.remove(best[1])
+        if remaining:
+            seq.extend(sorted(remaining))
+        return seq
+
+    add_seed(greedy_append())
+
+    def beam_append(width):
+        beam = [(0, tuple())]
+        for _ in range(n):
+            if time.time() >= deadline:
+                break
+            new_beam = []
+            for _, seq in beam:
+                used = set(seq)
+                for txn_id in range(n):
+                    if txn_id in used:
+                        continue
+                    candidate = seq + (txn_id,)
+                    new_beam.append((cost(candidate), candidate))
+            if not new_beam:
+                break
+            new_beam.sort(key=lambda item: item[0])
+            beam = new_beam[:width]
+        if beam and len(beam[0][1]) == n:
+            return list(beam[0][1])
+        return None
+
+    if n >= 90:
+        for width in (4, 8):
+            if time.time() > deadline - 12:
+                break
+            beam_seq = beam_append(width)
+            if beam_seq is not None:
+                add_seed(beam_seq)
+
+    best_cost, best_seq = min(seeds, key=lambda item: item[0])
+
+    def polish(seq, current_cost):
+        seq = list(seq)
+        improved = True
+        while improved and time.time() < deadline:
+            improved = False
+            best_move = (current_cost, None)
+            for i in range(len(seq)):
+                if time.time() >= deadline:
+                    break
+                item = seq[i]
+                base_seq = seq[:i] + seq[i + 1:]
+                for j in range(len(seq)):
+                    if j == i:
+                        continue
+                    candidate = base_seq[:j] + [item] + base_seq[j:]
+                    c = cost(candidate)
+                    if c < best_move[0]:
+                        best_move = (c, candidate)
+            if best_move[1] is not None:
+                current_cost, seq = best_move
+                improved = True
+                continue
+            for i in range(len(seq) - 1):
+                if time.time() >= deadline:
+                    break
+                for j in range(i + 1, len(seq)):
+                    candidate = list(seq)
+                    candidate[i], candidate[j] = candidate[j], candidate[i]
+                    c = cost(candidate)
+                    if c < best_move[0]:
+                        best_move = (c, candidate)
+            if best_move[1] is not None:
+                current_cost, seq = best_move
+                improved = True
+        return current_cost, seq
+
+    if n >= 90 and time.time() < deadline - 6:
+        best_cost, best_seq = polish(best_seq, best_cost)
+
+    if not valid(best_seq):
+        best_seq = list(range(n))
+        best_cost = cost(best_seq)
+    return best_cost, best_seq
+
+
+def get_random_costs():
+    workload = Workload(WORKLOAD_1)
+    makespan1, schedule1 = get_best_schedule(workload, 10)
+    cost1 = workload.get_opt_seq_cost(schedule1)
+
+    workload2 = Workload(WORKLOAD_2)
+    makespan2, schedule2 = get_best_schedule(workload2, 10)
+    cost2 = workload2.get_opt_seq_cost(schedule2)
+
+    workload3 = Workload(WORKLOAD_3)
+    makespan3, schedule3 = get_best_schedule(workload3, 10)
+    cost3 = workload3.get_opt_seq_cost(schedule3)
+    print(cost1, cost2, cost3)
+    return cost1 + cost2 + cost3, [schedule1, schedule2, schedule3]
+
+
+if __name__ == "__main__":
+    makespan, schedule = get_random_costs()
+    print(f"Makespan: {makespan}")

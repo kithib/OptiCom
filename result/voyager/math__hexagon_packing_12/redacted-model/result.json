@@ -1,0 +1,49 @@
+{
+  "task_slug": "math__hexagon_packing_12",
+  "task_full_name": "math/hexagon_packing_12",
+  "baseline": "voyager",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "hexagon_packing_12",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T12:10:19",
+  "elapsed_sec": 1524.86,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.6361871095285411,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.6361871095285411,
+  "all_metrics": {
+    "runtime_score": 0.6361871095285411,
+    "score": 0.6361871095285411,
+    "inv_outer_hex_side_length": 0.1613904777964089,
+    "combined_score": 0.6361871095285411,
+    "eval_time": 0.00046062469482421875,
+    "execution_time_ms": 1692.9123401641846
+  },
+  "best_artifact_id": "art_fac8edb5",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 5,
+      "runtime_score": 0.6361871095285411,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6361871095285411,
+      "artifact_id": "art_fac8edb5"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "voyager",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

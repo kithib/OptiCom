@@ -1,0 +1,100 @@
+{
+  "task_slug": "math__sums_diffs_finite_sets",
+  "task_full_name": "math/sums_diffs_finite_sets",
+  "baseline": "opticom",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "sums_diffs_finite_sets",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-28T15:23:50",
+  "elapsed_sec": 17517.44,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9524942029806498,
+  "previous_runtime_score": 0.0,
+  "delta_vs_previous": 0.9524942029806498,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9524942029806498,
+  "all_metrics": {
+    "runtime_score": 0.9524942029806498,
+    "score": 0.9524942029806498,
+    "c6_bound": 1.1033857453155467,
+    "combined_score": 0.9524942029806498,
+    "set_size": 20.0,
+    "max_val": 174.0,
+    "eval_time": 178.6937277317047,
+    "execution_time_ms": 188104.4008731842
+  },
+  "best_artifact_id": "art_de86d380",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.8796939073050272,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8796939073050272,
+      "artifact_id": "art_abcfe1cb"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.8935253763379639,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8935253763379639,
+      "artifact_id": "art_27b531f8"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.9091877826251914,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9091877826251914,
+      "artifact_id": "art_b44eb84f"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 0.9350227861057591,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9350227861057591,
+      "artifact_id": "art_f223c08f"
+    },
+    {
+      "iter": 14,
+      "runtime_score": 0.9371611977877111,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9371611977877111,
+      "artifact_id": "art_a4f1a28d"
+    },
+    {
+      "iter": 16,
+      "runtime_score": 0.9428118918645859,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9428118918645859,
+      "artifact_id": "art_2a1bb7bc"
+    },
+    {
+      "iter": 19,
+      "runtime_score": 0.9497590062814145,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9497590062814145,
+      "artifact_id": "art_112bb2cc"
+    },
+    {
+      "iter": 20,
+      "runtime_score": 0.9524942029806498,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9524942029806498,
+      "artifact_id": "art_de86d380"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opticom",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

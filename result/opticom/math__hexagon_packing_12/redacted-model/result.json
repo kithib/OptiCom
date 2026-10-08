@@ -1,0 +1,91 @@
+{
+  "task_slug": "math__hexagon_packing_12",
+  "task_full_name": "math/hexagon_packing_12",
+  "baseline": "opticom",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "hexagon_packing_12",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-04T23:48:23",
+  "elapsed_sec": 14038.25,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.7642219620009472,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.7642219620009472,
+  "all_metrics": {
+    "runtime_score": 0.7642219620009472,
+    "score": 0.7642219620009472,
+    "inv_outer_hex_side_length": 0.19387086871540676,
+    "combined_score": 0.7642219620009472,
+    "eval_time": 124.80378651618958,
+    "execution_time_ms": 133570.30487060547
+  },
+  "best_artifact_id": "art_d4b96364",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 4,
+      "runtime_score": 0.39419123,
+      "abs_metric": "combined_score",
+      "abs_value": 0.39419123,
+      "artifact_id": "art_c046e471"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.7208453239875819,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7208453239875819,
+      "artifact_id": "art_7aec0b88"
+    },
+    {
+      "iter": 11,
+      "runtime_score": 0.7396823647850709,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7396823647850709,
+      "artifact_id": "art_a7595428"
+    },
+    {
+      "iter": 12,
+      "runtime_score": 0.7642057240259909,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7642057240259909,
+      "artifact_id": "art_ab3057c7"
+    },
+    {
+      "iter": 13,
+      "runtime_score": 0.7642155181747049,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7642155181747049,
+      "artifact_id": "art_0ca9fabf"
+    },
+    {
+      "iter": 14,
+      "runtime_score": 0.7642219456788668,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7642219456788668,
+      "artifact_id": "art_16820e96"
+    },
+    {
+      "iter": 17,
+      "runtime_score": 0.7642219620009472,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7642219620009472,
+      "artifact_id": "art_d4b96364"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opticom",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

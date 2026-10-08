@@ -1,0 +1,89 @@
+{
+  "task_slug": "ADRS__prism",
+  "task_full_name": "ADRS/prism",
+  "baseline": "evox",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "prism",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T03:07:20",
+  "elapsed_sec": 3207.22,
+  "objective_key": "score",
+  "maximize": true,
+  "runtime_score": 0.17336017316964722,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.17336017316964722,
+  "all_metrics": {
+    "max_kvpr": 0.03833561195418276,
+    "execution_time": 0.0002024221420288086,
+    "success_rate": 0.18,
+    "combined_score": 0.17336017316964722,
+    "avg_case_score": 0.17336017316964722,
+    "successful_runs": 9.0,
+    "total_cases": 50.0,
+    "score": 0.17336017316964722
+  },
+  "best_artifact_id": "art_c433c8d1",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 22.66979637930192,
+      "abs_metric": "combined_score",
+      "abs_value": 22.66979637930192,
+      "artifact_id": "art_b749745e"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 24.126458393528118,
+      "abs_metric": "combined_score",
+      "abs_value": 24.126458393528118,
+      "artifact_id": "art_298c60a6"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 24.274776422738487,
+      "abs_metric": "combined_score",
+      "abs_value": 24.274776422738487,
+      "artifact_id": "art_3e2a85d5"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 24.284264098527377,
+      "abs_metric": "combined_score",
+      "abs_value": 24.284264098527377,
+      "artifact_id": "art_953f8ca5"
+    },
+    {
+      "iter": 12,
+      "runtime_score": 25.544111526169125,
+      "abs_metric": "combined_score",
+      "abs_value": 25.544111526169125,
+      "artifact_id": "art_38c188c2"
+    },
+    {
+      "iter": 14,
+      "runtime_score": 26.265405945655996,
+      "abs_metric": "combined_score",
+      "abs_value": 26.265405945655996,
+      "artifact_id": "art_c433c8d1"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "evox",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  },
+  "rescored_at": "2026-06-24T23:25:37",
+  "rescored_from_runtime_score": 26.265405945655996,
+  "rescored_program_path": "result/evox/ADRS__prism/redacted-model/best_program.py"
+}

@@ -1,0 +1,50 @@
+{
+  "task_slug": "math__erdos_min_overlap",
+  "task_full_name": "math/erdos_min_overlap",
+  "baseline": "reflexion",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "erdos_min_overlap",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-25T05:28:52",
+  "elapsed_sec": 2446.45,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.7637211848393682,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.7637211848393682,
+  "all_metrics": {
+    "runtime_score": 0.7637211848393682,
+    "score": 0.7637211848393682,
+    "c5_bound": 0.49877238273620605,
+    "combined_score": 0.7637211848393682,
+    "n_points": 400.0,
+    "eval_time": 4.803445816040039,
+    "execution_time_ms": 16128.404378890991
+  },
+  "best_artifact_id": "art_65067297",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.7637211848393682,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7637211848393682,
+      "artifact_id": "art_65067297"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "reflexion",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

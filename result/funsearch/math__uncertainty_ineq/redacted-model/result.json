@@ -1,0 +1,71 @@
+{
+  "task_slug": "math__uncertainty_ineq",
+  "task_full_name": "math/uncertainty_ineq",
+  "baseline": "funsearch",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "uncertainty_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-10T05:24:29",
+  "elapsed_sec": 16629.24,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8932892237937918,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.8932892237937918,
+  "all_metrics": {
+    "runtime_score": 0.8932892237937918,
+    "score": 0.8932892237937918,
+    "c4_bound": 0.3600034846352701,
+    "combined_score": 0.8932892237937918,
+    "r_max": 1.5039842436653985,
+    "eval_time": 139.75586366653442,
+    "execution_time_ms": 169861.72819137573
+  },
+  "best_artifact_id": "art_49221de7",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 6,
+      "runtime_score": 0.8509310740046208,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8509310740046208,
+      "artifact_id": "art_079468d4"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.8680584128426518,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8680584128426518,
+      "artifact_id": "art_8564c837"
+    },
+    {
+      "iter": 14,
+      "runtime_score": 0.8726734588580017,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8726734588580017,
+      "artifact_id": "art_4e31f5d3"
+    },
+    {
+      "iter": 15,
+      "runtime_score": 0.8932892237937918,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8932892237937918,
+      "artifact_id": "art_49221de7"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "funsearch",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

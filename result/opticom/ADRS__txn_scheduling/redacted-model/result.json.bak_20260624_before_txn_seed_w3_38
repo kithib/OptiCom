@@ -1,0 +1,43 @@
+{
+  "task_slug": "ADRS__txn_scheduling",
+  "task_full_name": "ADRS/txn_scheduling",
+  "baseline": "opticom",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "txn_scheduling",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-24T16:25:28",
+  "elapsed_sec": 88.48,
+  "objective_key": "combined_score",
+  "maximize": true,
+  "runtime_score": 4016.0642570281125,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 4016.0642570281125,
+  "all_metrics": {
+    "runtime_score": 4016.0642570281125,
+    "score": 4016.0642570281125,
+    "makespan": 248.0,
+    "schedule": 3.0,
+    "validity": 1.0,
+    "combined_score": 4016.0642570281125,
+    "execution_time_ms": 86621.51503562927
+  },
+  "best_artifact_id": "specialist_seed_txn_makespan",
+  "best_is_passed": true,
+  "improvement_history": [],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opticom",
+    "max_iterations": 0,
+    "stagnation_threshold": 3
+  },
+  "combined_score": 4016.0642570281125
+}

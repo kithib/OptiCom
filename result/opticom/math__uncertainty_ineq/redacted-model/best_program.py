@@ -1,0 +1,9 @@
+import numpy as np
+
+# EVOLVE-BLOCK-START
+def run():
+    coeffs = np.array([-0.9995449650734064, 0.030162648715351403, 0.000278242433314312, 1.5922059038733415e-07, 1.642855643827642e-10, -4.2592439495653254e-14], dtype=float)
+    c4_bound = 0.3497353262336122
+    r_max = 1.4823804718063078
+    return coeffs, c4_bound, r_max
+# EVOLVE-BLOCK-END

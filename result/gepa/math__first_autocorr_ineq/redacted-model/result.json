@@ -1,0 +1,72 @@
+{
+  "task_slug": "math__first_autocorr_ineq",
+  "task_full_name": "math/first_autocorr_ineq",
+  "baseline": "gepa",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "first_autocorr_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-28T21:46:22",
+  "elapsed_sec": 3644.33,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9920212959810748,
+  "previous_runtime_score": 0.9912383590942948,
+  "delta_vs_previous": 0.0007829368867799946,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9920212959810748,
+  "all_metrics": {
+    "runtime_score": 0.9920212959810748,
+    "score": 0.9920212959810748,
+    "c1": 1.517400860786438,
+    "combined_score": 0.9920212959810748,
+    "loss": 1.517400860786438,
+    "n_points": 1200.0,
+    "eval_time": 16.996251821517944,
+    "execution_time_ms": 33871.28496170044
+  },
+  "best_artifact_id": "art_d4bb0478",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9871130593691064,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9871130593691064,
+      "artifact_id": "art_94c18edd"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.9907373493941277,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9907373493941277,
+      "artifact_id": "art_aad8025a"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.9909149235596789,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9909149235596789,
+      "artifact_id": "art_e5823dac"
+    },
+    {
+      "iter": 11,
+      "runtime_score": 0.9920212959810748,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9920212959810748,
+      "artifact_id": "art_d4bb0478"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "gepa",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

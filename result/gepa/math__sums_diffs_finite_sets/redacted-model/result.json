@@ -1,0 +1,51 @@
+{
+  "task_slug": "math__sums_diffs_finite_sets",
+  "task_full_name": "math/sums_diffs_finite_sets",
+  "baseline": "gepa",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "sums_diffs_finite_sets",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T07:00:15",
+  "elapsed_sec": 3408.48,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9294868147385102,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9294868147385102,
+  "all_metrics": {
+    "runtime_score": 0.9294868147385102,
+    "score": 0.9294868147385102,
+    "c6_bound": 1.0767335891723633,
+    "combined_score": 0.9294868147385102,
+    "set_size": 15.0,
+    "max_val": 300.0,
+    "eval_time": 429.77568769454956,
+    "execution_time_ms": 445106.0230731964
+  },
+  "best_artifact_id": "art_0e0e3b57",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.9294868147385102,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9294868147385102,
+      "artifact_id": "art_0e0e3b57"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "gepa",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

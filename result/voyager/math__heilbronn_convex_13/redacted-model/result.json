@@ -1,0 +1,112 @@
+{
+  "task_slug": "math__heilbronn_convex_13",
+  "task_full_name": "math/heilbronn_convex_13",
+  "baseline": "voyager",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "heilbronn_convex_13",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-23T10:13:16",
+  "elapsed_sec": 2917.44,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.42108001714732307,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.42108001714732307,
+  "all_metrics": {
+    "runtime_score": 0.42108001714732307,
+    "score": 0.42108001714732307,
+    "min_area_normalized": 0.013026905765298693,
+    "combined_score": 0.42108001714732307,
+    "eval_time": 38.46672248840332,
+    "execution_time_ms": 38469.000577926636
+  },
+  "best_artifact_id": "art_4cdf0cb9",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.021687678644938858,
+      "abs_metric": "combined_score",
+      "abs_value": 0.021687678644938858,
+      "artifact_id": "art_ca55a7d6"
+    },
+    {
+      "iter": 4,
+      "runtime_score": 0.07490786266218924,
+      "abs_metric": "combined_score",
+      "abs_value": 0.07490786266218924,
+      "artifact_id": "art_f2a34080"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.0833612691352284,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0833612691352284,
+      "artifact_id": "art_e1eed28b"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 0.16299453777332226,
+      "abs_metric": "combined_score",
+      "abs_value": 0.16299453777332226,
+      "artifact_id": "art_b0621651"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 0.2203406775583855,
+      "abs_metric": "combined_score",
+      "abs_value": 0.2203406775583855,
+      "artifact_id": "art_9ab642f5"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.24209947993495248,
+      "abs_metric": "combined_score",
+      "abs_value": 0.24209947993495248,
+      "artifact_id": "art_6ba856b6"
+    },
+    {
+      "iter": 11,
+      "runtime_score": 0.2700060822914913,
+      "abs_metric": "combined_score",
+      "abs_value": 0.2700060822914913,
+      "artifact_id": "art_a7b99efb"
+    },
+    {
+      "iter": 13,
+      "runtime_score": 0.3193195589366748,
+      "abs_metric": "combined_score",
+      "abs_value": 0.3193195589366748,
+      "artifact_id": "art_acadc813"
+    },
+    {
+      "iter": 19,
+      "runtime_score": 0.38469250598321636,
+      "abs_metric": "combined_score",
+      "abs_value": 0.38469250598321636,
+      "artifact_id": "art_f5be7a28"
+    },
+    {
+      "iter": 22,
+      "runtime_score": 0.42108001714732307,
+      "abs_metric": "combined_score",
+      "abs_value": 0.42108001714732307,
+      "artifact_id": "art_4cdf0cb9"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "voyager",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

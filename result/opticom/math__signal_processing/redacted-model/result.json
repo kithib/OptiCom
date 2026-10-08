@@ -1,0 +1,96 @@
+{
+  "task_slug": "math__signal_processing",
+  "task_full_name": "math/signal_processing",
+  "baseline": "opticom",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "signal_processing",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-25T16:47:30",
+  "elapsed_sec": 7024.05,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.5483877723746386,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.5483877723746386,
+  "all_metrics": {
+    "runtime_score": 0.5483877723746386,
+    "score": 0.5483877723746386,
+    "combined_score": 0.5483877723746386,
+    "composite_score": 0.5195315314515434,
+    "overall_score": 0.5483877723746386,
+    "slope_changes": 87.2,
+    "lag_error": 0.23651275169292257,
+    "avg_error": 0.4580883997137672,
+    "false_reversals": 73.4,
+    "correlation": 0.8545394778648276,
+    "noise_reduction": 0.3235383138523484,
+    "smoothness_score": 0.18656716417910446,
+    "responsiveness_score": 0.8087259905980666,
+    "accuracy_score": 0.8545394778648276,
+    "efficiency_score": 1.0,
+    "execution_time": 0.24153170585632325,
+    "success_rate": 1.0,
+    "execution_time_ms": 23028.462886810303
+  },
+  "best_artifact_id": "art_9f26355e",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.5126002375921417,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5126002375921417,
+      "artifact_id": "art_87d1880c"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.520785256232659,
+      "abs_metric": "combined_score",
+      "abs_value": 0.520785256232659,
+      "artifact_id": "art_6e7d865d"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.5225866430338042,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5225866430338042,
+      "artifact_id": "art_c560f9bc"
+    },
+    {
+      "iter": 11,
+      "runtime_score": 0.5347968778648493,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5347968778648493,
+      "artifact_id": "art_15f938df"
+    },
+    {
+      "iter": 14,
+      "runtime_score": 0.5349403281990682,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5349403281990682,
+      "artifact_id": "art_84d02f63"
+    },
+    {
+      "iter": 15,
+      "runtime_score": 0.5483877723746386,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5483877723746386,
+      "artifact_id": "art_9f26355e"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opticom",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "task_slug": "ADRS__llm_sql",
+  "task_full_name": "ADRS/llm_sql",
+  "baseline": "opticom",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "llm_sql",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-21T12:05:13",
+  "elapsed_sec": 413.03,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.6980352706081752,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.6980352706081752,
+  "all_metrics": {
+    "runtime_score": 0.6980352706081752,
+    "score": 0.6980352706081752,
+    "combined_score": 0.6980352706081752,
+    "runs_successfully": 1.0,
+    "total_runtime": 35.16265654563904,
+    "execution_time_ms": 67266.2558555603
+  },
+  "best_artifact_id": "initial_seed",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.6980352706081752,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6980352706081752,
+      "artifact_id": "initial_seed"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opticom",
+    "max_iterations": 1,
+    "stagnation_threshold": 4
+  }
+}

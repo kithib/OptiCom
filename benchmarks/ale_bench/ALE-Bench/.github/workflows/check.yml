@@ -1,0 +1,58 @@
+name: Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref == 'refs/heads/main' && github.run_number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Python ${{ matrix.python-version }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [
+          "ubuntu-latest",
+          "macos-latest",
+        ]
+        python-version: [
+          "3.10",
+          "3.11",
+          "3.12",
+          "3.13",
+          "3.14"
+        ]
+
+    steps:
+    - uses: actions/checkout@v6
+
+    - name: Set library path for Homebrew on macOS
+      if: runner.os == 'macOS'
+      run: echo "DYLD_FALLBACK_LIBRARY_PATH=$(brew --prefix)/lib" >> "$GITHUB_ENV"
+
+    - name: Install uv and set the python version
+      uses: astral-sh/setup-uv@v7
+      with:
+        enable-cache: true
+        python-version: ${{ matrix.python-version }}
+        version: 0.10.0
+
+    - name: Install the project
+      run: uv sync --dev --extra eval
+
+    - name: Lint code with Ruff
+      run: uv run ruff check --output-format=github
+
+    - name: Check code formatting with Ruff
+      run: uv run ruff format --diff
+
+    - name: Run type checks with ty
+      run: uv run ty check
+
+    - name: Run tests
+      run: uv run pytest -m "not docker and not slow"

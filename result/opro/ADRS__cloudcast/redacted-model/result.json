@@ -1,0 +1,61 @@
+{
+  "task_slug": "ADRS__cloudcast",
+  "task_full_name": "ADRS/cloudcast",
+  "baseline": "opro",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "cloudcast",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-08T21:07:15",
+  "elapsed_sec": 4080.96,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.0009650880172190538,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.0009650880172190538,
+  "all_metrics": {
+    "runtime_score": 0.0009650880172190538,
+    "score": 0.0009650880172190538,
+    "combined_score": 0.0009650880172190538,
+    "runs_successfully": 1.0,
+    "total_cost": 1035.1749210000003,
+    "avg_cost": 207.03498420000005,
+    "successful_configs": 5.0,
+    "failed_configs": 0.0,
+    "cost_score": 0.0009650880172190538,
+    "success_rate": 1.0,
+    "execution_time_ms": 19276.679039001465
+  },
+  "best_artifact_id": "art_cf4027d6",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.0009458240532545252,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0009458240532545252,
+      "artifact_id": "art_b585c493"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.0009650880172190538,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0009650880172190538,
+      "artifact_id": "art_cf4027d6"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opro",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "task_slug": "math__uncertainty_ineq",
+  "task_full_name": "math/uncertainty_ineq",
+  "baseline": "textgrad",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "uncertainty_ineq",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-28T20:32:27",
+  "elapsed_sec": 8861.58,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8955783751823293,
+  "previous_runtime_score": 0.8907103314639873,
+  "delta_vs_previous": 0.004868043718342041,
+  "abs_metric": "combined_score",
+  "abs_value": 0.8955783751823293,
+  "all_metrics": {
+    "runtime_score": 0.8955783751823293,
+    "score": 0.8955783751823293,
+    "c4_bound": 0.3590832943989177,
+    "combined_score": 0.8955783751823293,
+    "r_max": 1.502060877401752,
+    "eval_time": 66.2587354183197,
+    "execution_time_ms": 86613.14249038696
+  },
+  "best_artifact_id": "art_bd39013d",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.7974686398600623,
+      "abs_metric": "combined_score",
+      "abs_value": 0.7974686398600623,
+      "artifact_id": "art_e11f3fa7"
+    },
+    {
+      "iter": 12,
+      "runtime_score": 0.8898948291525746,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8898948291525746,
+      "artifact_id": "art_c8dc421b"
+    },
+    {
+      "iter": 21,
+      "runtime_score": 0.8955783751823293,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8955783751823293,
+      "artifact_id": "art_bd39013d"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "textgrad",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "task_slug": "math__circle_packing",
+  "task_full_name": "math/circle_packing",
+  "baseline": "funsearch",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "circle_packing",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-27T06:35:12",
+  "elapsed_sec": 2276.32,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8276802181177012,
+  "previous_runtime_score": 0.7340997577228993,
+  "delta_vs_previous": 0.09358046039480195,
+  "abs_metric": "sum_radii",
+  "abs_value": 2.1809373747401426,
+  "all_metrics": {
+    "runtime_score": 0.8276802181177012,
+    "score": 0.8276802181177012,
+    "sum_radii": 2.1809373747401426,
+    "target_ratio": 0.8276802181177012,
+    "validity": 1.0,
+    "eval_time": 1.6946117877960205,
+    "combined_score": 0.8276802181177012,
+    "execution_time_ms": 3499.540328979492
+  },
+  "best_artifact_id": "art_d5c6e198",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.5765428739148731,
+      "abs_metric": "sum_radii",
+      "abs_value": 1.5191904727656906,
+      "artifact_id": "art_213367b6"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.7530300782099939,
+      "abs_metric": "sum_radii",
+      "abs_value": 1.9842342560833337,
+      "artifact_id": "art_9b48bedf"
+    },
+    {
+      "iter": 4,
+      "runtime_score": 0.7722339875131702,
+      "abs_metric": "sum_radii",
+      "abs_value": 2.0348365570972033,
+      "artifact_id": "art_1e510796"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.8276802181177012,
+      "abs_metric": "sum_radii",
+      "abs_value": 2.1809373747401426,
+      "artifact_id": "art_d5c6e198"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "funsearch",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "task_slug": "ADRS__llm_sql",
+  "task_full_name": "ADRS/llm_sql",
+  "baseline": "funsearch",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "llm_sql",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-10T20:49:00",
+  "elapsed_sec": 6683.82,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.5828806809732096,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.5828806809732096,
+  "all_metrics": {
+    "runtime_score": 0.5828806809732096,
+    "score": 0.5828806809732096,
+    "combined_score": 0.5828806809732096,
+    "runs_successfully": 1.0,
+    "total_runtime": 155.07861065864563,
+    "execution_time_ms": 232726.57561302185
+  },
+  "best_artifact_id": "art_4d85882a",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 2,
+      "runtime_score": 0.5828806809732096,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5828806809732096,
+      "artifact_id": "art_4d85882a"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "funsearch",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

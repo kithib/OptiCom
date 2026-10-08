@@ -1,0 +1,56 @@
+{
+  "task_slug": "math__heilbronn_convex_13",
+  "task_full_name": "math/heilbronn_convex_13",
+  "baseline": "funsearch",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "heilbronn_convex_13",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-23T09:04:05",
+  "elapsed_sec": 2595.01,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.08775822125747167,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.08775822125747167,
+  "all_metrics": {
+    "runtime_score": 0.08775822125747167,
+    "score": 0.08775822125747167,
+    "min_area_normalized": 0.002714966352942222,
+    "combined_score": 0.08775822125747167,
+    "eval_time": 0.5915968418121338,
+    "execution_time_ms": 594.233512878418
+  },
+  "best_artifact_id": "art_c8f1ce47",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.08755272915905939,
+      "abs_metric": "combined_score",
+      "abs_value": 0.08755272915905939,
+      "artifact_id": "art_171c8494"
+    },
+    {
+      "iter": 4,
+      "runtime_score": 0.08775822125747167,
+      "abs_metric": "combined_score",
+      "abs_value": 0.08775822125747167,
+      "artifact_id": "art_c8f1ce47"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "funsearch",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

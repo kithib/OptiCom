@@ -1,0 +1,77 @@
+{
+  "task_slug": "math__heilbronn_triangle",
+  "task_full_name": "math/heilbronn_triangle",
+  "baseline": "dspy",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "heilbronn_triangle",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-27T07:11:11",
+  "elapsed_sec": 9188.25,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.9145413964802052,
+  "previous_runtime_score": 0.7837639563734052,
+  "delta_vs_previous": 0.13077744010679992,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9145413964802052,
+  "all_metrics": {
+    "runtime_score": 0.9145413964802052,
+    "score": 0.9145413964802052,
+    "min_area_normalized": 0.03340809650415089,
+    "combined_score": 0.9145413964802052,
+    "eval_time": 544.6702268123627,
+    "execution_time_ms": 546441.3030147552
+  },
+  "best_artifact_id": "art_479c2ae6",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.04817822365866957,
+      "abs_metric": "combined_score",
+      "abs_value": 0.04817822365866957,
+      "artifact_id": "art_dd774b0d"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.24535603014529775,
+      "abs_metric": "combined_score",
+      "abs_value": 0.24535603014529775,
+      "artifact_id": "art_c7d9c351"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 0.37460068737786306,
+      "abs_metric": "combined_score",
+      "abs_value": 0.37460068737786306,
+      "artifact_id": "art_e6b1a4d7"
+    },
+    {
+      "iter": 7,
+      "runtime_score": 0.6671866851072394,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6671866851072394,
+      "artifact_id": "art_97ff8d98"
+    },
+    {
+      "iter": 9,
+      "runtime_score": 0.9145413964802052,
+      "abs_metric": "combined_score",
+      "abs_value": 0.9145413964802052,
+      "artifact_id": "art_479c2ae6"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "dspy",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

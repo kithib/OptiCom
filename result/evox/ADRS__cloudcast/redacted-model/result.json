@@ -1,0 +1,82 @@
+{
+  "task_slug": "ADRS__cloudcast",
+  "task_full_name": "ADRS/cloudcast",
+  "baseline": "evox",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "cloudcast",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-09T03:16:27",
+  "elapsed_sec": 5166.95,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.0009651245162391779,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.0009651245162391779,
+  "all_metrics": {
+    "runtime_score": 0.0009651245162391779,
+    "score": 0.0009651245162391779,
+    "combined_score": 0.0009651245162391779,
+    "runs_successfully": 1.0,
+    "total_cost": 1035.135735,
+    "avg_cost": 207.027147,
+    "successful_configs": 5.0,
+    "failed_configs": 0.0,
+    "cost_score": 0.0009651245162391779,
+    "success_rate": 1.0,
+    "execution_time_ms": 16328.315496444702
+  },
+  "best_artifact_id": "art_048e090c",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.0009379289536000506,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0009379289536000506,
+      "artifact_id": "art_8e428ad5"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 0.0009486056500568941,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0009486056500568941,
+      "artifact_id": "art_3c4bbd4f"
+    },
+    {
+      "iter": 11,
+      "runtime_score": 0.0009535238015116669,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0009535238015116669,
+      "artifact_id": "art_62bc73bd"
+    },
+    {
+      "iter": 12,
+      "runtime_score": 0.0009540356718288099,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0009540356718288099,
+      "artifact_id": "art_db608015"
+    },
+    {
+      "iter": 13,
+      "runtime_score": 0.0009651245162391779,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0009651245162391779,
+      "artifact_id": "art_048e090c"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "evox",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

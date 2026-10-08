@@ -1,0 +1,47 @@
+{
+  "task_slug": "math__hexagon_packing_11",
+  "task_full_name": "math/hexagon_packing_11",
+  "baseline": "reflexion",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "hexagon_packing_11",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-25T00:42:23",
+  "elapsed_sec": 878.8,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.0,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.0,
+  "all_metrics": {
+    "runtime_score": 0.0,
+    "score": 0.0,
+    "combined_score": 0.0,
+    "execution_time_ms": 4415.084362030029
+  },
+  "best_artifact_id": "art_fadf7db3",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.0,
+      "abs_metric": "combined_score",
+      "abs_value": 0.0,
+      "artifact_id": "art_fadf7db3"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "reflexion",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

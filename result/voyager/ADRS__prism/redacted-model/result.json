@@ -1,0 +1,75 @@
+{
+  "task_slug": "ADRS__prism",
+  "task_full_name": "ADRS/prism",
+  "baseline": "voyager",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "prism",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T05:22:22",
+  "elapsed_sec": 2766.57,
+  "objective_key": "score",
+  "maximize": true,
+  "runtime_score": 0.9613592262046717,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.9613592262046717,
+  "all_metrics": {
+    "max_kvpr": 0.04024917280128227,
+    "execution_time": 0.0003233194351196289,
+    "success_rate": 1.0,
+    "combined_score": 0.9613592262046717,
+    "avg_case_score": 0.9613592262046717,
+    "successful_runs": 50.0,
+    "total_cases": 50.0,
+    "score": 0.9613592262046717
+  },
+  "best_artifact_id": "art_aa78ed8a",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 22.338544725203036,
+      "abs_metric": "combined_score",
+      "abs_value": 22.338544725203036,
+      "artifact_id": "art_1e4c923c"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 25.81516680460137,
+      "abs_metric": "combined_score",
+      "abs_value": 25.81516680460137,
+      "artifact_id": "art_5d8ef01e"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 25.830243887595937,
+      "abs_metric": "combined_score",
+      "abs_value": 25.830243887595937,
+      "artifact_id": "art_da82b57a"
+    },
+    {
+      "iter": 4,
+      "runtime_score": 25.845231104181643,
+      "abs_metric": "combined_score",
+      "abs_value": 25.845231104181643,
+      "artifact_id": "art_aa78ed8a"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "voyager",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  },
+  "rescored_at": "2026-06-24T23:25:37",
+  "rescored_from_runtime_score": 25.845231104181643,
+  "rescored_program_path": "result/voyager/ADRS__prism/redacted-model/best_program.py"
+}

@@ -1,0 +1,85 @@
+{
+  "task_slug": "math__matmul",
+  "task_full_name": "math/matmul",
+  "baseline": "adaevolve",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "matmul",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T20:51:21",
+  "elapsed_sec": 12199.98,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.8,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 0.8,
+  "all_metrics": {
+    "runtime_score": 0.8,
+    "score": 0.8,
+    "combined_score": 0.8,
+    "loss": 0.0,
+    "rank": 40.0,
+    "eval_time": 15.064176797866821,
+    "execution_time_ms": 31448.107481002808
+  },
+  "best_artifact_id": "art_f35bf645",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.5818181818181818,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5818181818181818,
+      "artifact_id": "art_a02eb6cc"
+    },
+    {
+      "iter": 2,
+      "runtime_score": 0.6037735849056604,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6037735849056604,
+      "artifact_id": "art_3709f71d"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 0.6153846153846154,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6153846153846154,
+      "artifact_id": "art_a2849669"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 0.64,
+      "abs_metric": "combined_score",
+      "abs_value": 0.64,
+      "artifact_id": "art_904f9f04"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.6666666666666666,
+      "abs_metric": "combined_score",
+      "abs_value": 0.6666666666666666,
+      "artifact_id": "art_ab33e0e8"
+    },
+    {
+      "iter": 12,
+      "runtime_score": 0.8,
+      "abs_metric": "combined_score",
+      "abs_value": 0.8,
+      "artifact_id": "art_f35bf645"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "adaevolve",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

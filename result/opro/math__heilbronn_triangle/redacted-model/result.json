@@ -1,0 +1,70 @@
+{
+  "task_slug": "math__heilbronn_triangle",
+  "task_full_name": "math/heilbronn_triangle",
+  "baseline": "opro",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "math",
+  "benchmark_task_id": "heilbronn_triangle",
+  "benchmark_language": "python",
+  "timestamp": "2026-05-26T19:30:37",
+  "elapsed_sec": 3083.71,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 0.5983793234220595,
+  "previous_runtime_score": 0.5477383392562382,
+  "delta_vs_previous": 0.0506409841658213,
+  "abs_metric": "combined_score",
+  "abs_value": 0.5983793234220595,
+  "all_metrics": {
+    "runtime_score": 0.5983793234220595,
+    "score": 0.5983793234220595,
+    "min_area_normalized": 0.021858730791094783,
+    "combined_score": 0.5983793234220595,
+    "eval_time": 1.0582730770111084,
+    "execution_time_ms": 8908.655643463135
+  },
+  "best_artifact_id": "art_c2419060",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 0.04113264322503241,
+      "abs_metric": "combined_score",
+      "abs_value": 0.04113264322503241,
+      "artifact_id": "art_2b208bfd"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 0.1258087468548125,
+      "abs_metric": "combined_score",
+      "abs_value": 0.1258087468548125,
+      "artifact_id": "art_20dfafaa"
+    },
+    {
+      "iter": 6,
+      "runtime_score": 0.12587725025995428,
+      "abs_metric": "combined_score",
+      "abs_value": 0.12587725025995428,
+      "artifact_id": "art_312ddaa9"
+    },
+    {
+      "iter": 10,
+      "runtime_score": 0.5983793234220595,
+      "abs_metric": "combined_score",
+      "abs_value": 0.5983793234220595,
+      "artifact_id": "art_c2419060"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "opro",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "task_slug": "ADRS__txn_scheduling",
+  "task_full_name": "ADRS/txn_scheduling",
+  "baseline": "alphaevolve",
+  "model_slug": "redacted-model",
+  "result_layout": "result/<baseline>/<task>/<model>",
+  "is_benchmark": true,
+  "benchmark_category": "ADRS",
+  "benchmark_task_id": "txn_scheduling",
+  "benchmark_language": "python",
+  "timestamp": "2026-06-05T21:40:27",
+  "elapsed_sec": 12552.33,
+  "objective_key": "runtime_score",
+  "maximize": true,
+  "runtime_score": 3952.569169960474,
+  "previous_runtime_score": null,
+  "delta_vs_previous": null,
+  "abs_metric": "combined_score",
+  "abs_value": 3952.569169960474,
+  "all_metrics": {
+    "runtime_score": 3952.569169960474,
+    "score": 3952.569169960474,
+    "makespan": 252.0,
+    "schedule": 3.0,
+    "validity": 1.0,
+    "combined_score": 3952.569169960474,
+    "execution_time_ms": 251999.5791912079
+  },
+  "best_artifact_id": "art_7bf9ea9a",
+  "best_is_passed": true,
+  "improvement_history": [
+    {
+      "iter": 1,
+      "runtime_score": 3289.4736842105262,
+      "abs_metric": "combined_score",
+      "abs_value": 3289.4736842105262,
+      "artifact_id": "art_aa793db9"
+    },
+    {
+      "iter": 3,
+      "runtime_score": 3378.3783783783783,
+      "abs_metric": "combined_score",
+      "abs_value": 3378.3783783783783,
+      "artifact_id": "art_ff5035ce"
+    },
+    {
+      "iter": 4,
+      "runtime_score": 3636.363636363636,
+      "abs_metric": "combined_score",
+      "abs_value": 3636.363636363636,
+      "artifact_id": "art_0c734d58"
+    },
+    {
+      "iter": 5,
+      "runtime_score": 3787.878787878788,
+      "abs_metric": "combined_score",
+      "abs_value": 3787.878787878788,
+      "artifact_id": "art_71310ee0"
+    },
+    {
+      "iter": 8,
+      "runtime_score": 3802.2813688212927,
+      "abs_metric": "combined_score",
+      "abs_value": 3802.2813688212927,
+      "artifact_id": "art_147bb76c"
+    },
+    {
+      "iter": 15,
+      "runtime_score": 3831.417624521073,
+      "abs_metric": "combined_score",
+      "abs_value": 3831.417624521073,
+      "artifact_id": "art_72aa3d3f"
+    },
+    {
+      "iter": 17,
+      "runtime_score": 3952.569169960474,
+      "abs_metric": "combined_score",
+      "abs_value": 3952.569169960474,
+      "artifact_id": "art_7bf9ea9a"
+    }
+  ],
+  "code_file": "best_program.py",
+  "llm": {
+    "provider": "redacted",
+    "model": "redacted-model"
+  },
+  "runner": {
+    "baseline": "alphaevolve",
+    "max_iterations": 30,
+    "stagnation_threshold": 4
+  }
+}
