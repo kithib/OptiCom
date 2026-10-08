@@ -52,9 +52,7 @@ OptiCom/
 ├── benchmarks/                 # Tasks, evaluators, and task-specific setup
 ├── example/                    # YAML configuration templates
 ├── result/                     # Released best-result archive
-├── paths/                      # Supporting search artifacts
-├── tests/                      # Framework and evaluator tests
-└── docs/release-history/        # Original supplementary-package notes
+└── tests/                      # Framework and evaluator tests
 ```
 
 ## Getting started
